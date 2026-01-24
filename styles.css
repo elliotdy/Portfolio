@@ -2,8 +2,7 @@ h1, h2, p,h3 {
   text-align: center;
 }
 
-
-body{
+.home{
   font-family:sans-serif;
   /*background-color:aqua;*/
 
@@ -29,4 +28,40 @@ nav,
   max-width: 700px;   
   margin: 40px auto; 
   border-radius: 12px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.project {
+  margin: 0;
+  text-align: left;
+}
+
+.project img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.project figcaption {
+  margin-top: 10px;
+}
+
+.project h3 {
+  margin: 8px 0 4px;
+}
+
+.project p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
 }
