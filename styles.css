@@ -1,6 +1,5 @@
-h1, h2, p,h3 {
-  text-align: center;
-}
+
+
 
 .home{
   font-family:sans-serif;
@@ -8,6 +7,7 @@ h1, h2, p,h3 {
 
   background-image:url("images/table.jpg");
    background-size: cover;
+   text-align: center;
 }
 
 .folder{
@@ -65,3 +65,75 @@ nav,
   font-size: 0.9rem;
   color: #555;
 }
+
+.resume h1{
+  font-size: 18pt;
+}
+
+.resume h2{
+  font-size: 12pt;
+}
+
+.resume p, .resume ul, .resume span{
+  font-size: 11pt;
+}
+
+.resume h2, hr,.resume h1, .resume p, .resume ul{
+  margin-top: 0.5px;
+  margin-bottom: 0.5px;
+}
+
+hr{
+  background-color: black;
+  border-color: black;
+}
+
+.school, .degree,.work,.title{
+  display: flex;
+  justify-content: space-between;
+}
+
+.uni, .course, .group, .resume-project, .skill-type{
+  font-weight:bold;
+}
+
+.date {
+  margin-left: auto;
+  font-style: italic;
+}
+
+.date2{
+  font-style: italic
+}
+
+.gpa, .location2{
+  margin-left: auto;
+}
+
+.resume-page{
+  background-color:grey;
+
+}
+
+.resume{
+
+  background-color:white;
+  
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  padding-right: 50px;
+  padding-left: 50px;
+  width: 716px;
+  height: 956px;
+  h1, .centered-text{
+    text-align: center;
+
+  }
+}
+
+
+/* padding and width/heights needs to equal: 816/1056
+
+
