@@ -15,7 +15,9 @@
 
     <section class = resume>
         <h1>Elliot A. Dy</h1>
-        <p class = centered-text>elliotady@gmail.com | 802-557-4337 | 2 Ashford Ct, Boston, MA</p>
+        <p class = centered-text>elliotdy.com | 802-557-4337 | elliotady@gmail.com | 2 Ashford Ct, Boston, MA</p>
+
+<!--EDUCATION-->        
         
         <section class = education>
             <h2>EDUCATION</h2>
@@ -41,45 +43,53 @@
             </article>
             
             <article class="coursework">
-                <p class = "course">Relevent Coursework:</p>
-                <ul>
-                    <li>Manufacturing Processes | Aircraft Design | Fluid Mechanics | Thermodynamics | Dynamics |</li>
-                </ul>
+                <span class = "course">Relevent Coursework:</span>
+                <span class = "classes">Manufacturing Processes | Aircraft Design | Aerodynamics | Fluid Mechanics | Thermodynamics | </span>
             </article>
         </section>
+
+<!--EXPERIENCE-->
+
         <section class = experience>
             <h2>EXPERIENCE</h2>
             <hr>
             <article class="work">
-                <span class="group">Unsteady Fluid Mechanics and Acoustics Laboratory</span>
+                <span class="group">NASA Aeronautics Research Mission Directorate’s ULI - Published Author/Research Assistant</span>
                 <span class ="location2">Boston, MA</span>
             </article>
             <aritcle class= "title">
-                <span class="position">Research Assistant</span>
+                <span class="position">Unsteady Fluid Mechanics and Acoustics Laboratory</span>
                 <span class ="date">January 2025 – Current</span>
             </aritcle>
                 <ul>
-                    <li>NASA ULI research in low-noise Urban Air Mobility in urban canyons with trim optimization</li>
-                    <li>Utilize high and low fidelity prediction models for turbulent and laminar flow around buildings and tunnels</li>
-                    <li>Further predict acoustic tonal and broadband noise from multi-rotor interactions from the predicted flows</li>
+                    <li>Co-authored AIAA publication “Prediction of Performance and Noise of a Small Quadrotor Using CHARM,” contributing blade geometry processing and thickness-noise analysis used in final results</li>
+                    <li>Evaluated CHARM simulation settings and rotor geometries to study effects on predicted quadrotor forces, moments, and thickness noise, supporting validation against NASA experimental data</li>
+                    <li>Automated workflow converting airfoil coordinate data into STL, PSU-WOPWOP, and pressure files, enabling batch comparison of simulated thickness noise across 100+ geometry cases</li>
+                    <li>Developed MATLAB tools to generate quad-mesh blade geometries and convert ASCII simulation outputs to CHARM-compatible binary formats, improving analysis efficiency and reproducibility</li>
+                </ul>
                 </ul>
             <article class="work">
-                <span class="group">NASA L’SPACE Program</span>
+                <span class="group">NASA L’SPACE Programs – Project Manager</span>
                 <span class ="location2">Remote</span>
             </article>
             <aritcle class= "title">
-                <span class="position">MCA Team Project Manager</span>
+                <span class="position">Proposal Writing (NPWEE) & Mission Concept Academy (MCA)</span>
                 <span class ="date">June 2025 – September 2025</span>
             </aritcle>
                 <ul>
-                    <li>Work closely with NASA engineers, scientists, and managers to integrate a technical proposal and preliminary design presentation that aligns with NASA’s mission design and taxonomy classification </li>
-                    <li>Research in-depth components and systems to innovate and optimize launch and in-space propulsion solutions</li>
-                    <li>Managed a team of 6 students and maintained communication to organize team operations, schedule weekly meetings, lead task distributions and project checks, and maintain constituency across deliverables</li>
+                    <li>Led 17-member team developing a Mars rover mission concept in MCA, delivering a 200+ page Preliminary Design Review and final mission presentation to the review panel </li>
+                    <li>Managed a 7-member team in NPWEE program developing a plasma-assisted solar sail propulsion proposal for long-duration and sub-L1 missions competing for NASA technology funding</li>
+                    <li>Coordinated science, engineering, and programmatics subteams, organizing meetings, schedules, task assignments, and deliverables while maintaining technical consistency across mission and proposal milestones</li>
+                    <li>Collaborated with NASA engineers and subject matter experts, authored proposal technical sections, supported NASA New Technology Report submission, and participated in peer proposal evaluation</li>
                 </ul>
+
+            <!--
             <article class="work">
                 <span class="group">NASA L’SPACE Programy</span>
                 <span class ="location2">Remote</span>
             </article>
+
+    
             <aritcle class= "title">
                 <span class="position">NPWEE Team Project Manager</span>
                 <span class ="date">January 2025 – May 2025</span>
@@ -91,78 +101,88 @@
                 </ul>
         </section>
         <section class = projects>
+    -->
            
+<!--PROJECTS-->
+
             <h2>PROJECTS</h2>
             <hr>
             <article class="project-name">
-                <span class="resume-project">Supercritical CO Turbine Generator,</span>
+                <span class="resume-project">Supercritical CO<sub>2</sub> Turbine Generator,</span>
                 <span class ="reason">Senior Design</span>
             </article>
             <ul>
-                <li>Lead Design for turbine rotor, enclosure, and nozzle to accelerate input gas to 730 m/s and rotor to spin 60,000 rpm</li>
-                <li>Machined</li>
-                <li>Tested</li>
+                <li>Designed turbine subsystem for a supercritical CO₂ Rankine cycle, creating rotor, enclosure, and nozzle in SolidWorks for integration with system evaporator and condenser, operating at 60,000 RPM and generating 24 V </li>
+                <li>Designed nozzle and flow path for 7.4 MPa, 400 °C supercritical CO₂ achieving 730 m/s jet velocity at 13 g/s mass flow</li>
+                <li>Applied GD&T, shaft–bore fit selection, and tolerance stack-up analysis to ensure high-speed rotor and enclosure operation</li>
+                <li>Generated Fusion 360 CAM toolpaths and designed components for manufacturability for CNC lathe, CNC mill, and wire EDM, integrating bearings and sealing solutions for high-pressure operation</li>
             </ul>
             <article class="project-name">
                 <span class="resume-project">Walking Table,</span>
                 <span class ="reason">Passion Project</span>
             </article>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Designed and assembled a 578-part walking table in SolidWorks using linkage mechanisms driven dual motor tank-style</li>
+                <li>Engineered screw, bearing, and insert interface and optimized 3D-print orientation to prevent linkage failures under loads</li>
+                <li>Integrated circuit using Li-ion battery, buck/boost converters, motor drivers, and Arduino control for multi-voltage operation.</li>
+                <li>Developed Arduino-based wireless joystick control using two microcontrollers and wireless Bluetooth movement control</li>
             </ul>
             <article class="project-name">
                 <span class="resume-project">Drink Mixer,</span>
                 <span class ="reason">Electromechanical Design</span>
             </article>
             <ul>
-                <li>Designed and calculated optimal 80% bell nozzle geometry with desired area ratio and parabolic curve</li>
-                <li>Created CAD and simulated stress of material undergoing inside chamber pressure with yield FOS: 4.25</li>
-                <li>Worked and presented with a team of 3 to integrate nozzle with an electric circuit to be fired and tested for resulting thrust</li>
+                <li>Designed and built a 4.5-DOF Cartesian drink mixer using 8020 aluminum extrusions, GT2 belts, and NEMA 17 motors</li>
+                <li>Modeled and fabricated custom motor mounts, sliders, and fixtures in SolidWorks using 3D printing and laser cutting</li>
+                <li>Integrated motion transmission and end-effector design to achieve repeatable X-Y-Z positioning and bottle handling</li>
             </ul>
             <article class="project-name">
                 <span class="resume-project">Rocket Nozzle,</span>
                 <span class ="reason">Boston University Rocket Propulsion Group</span>
             </article>
             <ul>
-                <li>Designed and calculated optimal 80% bell nozzle geometry with desired area ratio and parabolic curve</li>
-                <li>Created CAD and simulated stress of material undergoing inside chamber pressure with yield FOS: 4.25</li>
-                <li>Worked and presented with a team of 3 to integrate nozzle with an electric circuit to be fired and tested for resulting thrust</li>
+                <li>Designed and optimized an 80% bell nozzle to achieve target expansion ratio using parabolic contour design</li>
+                <li>Modeled nozzle in CAD and performed pressure stress simulations, verifying FOS = 4.25</li>
+                <li>Integrated nozzle and ignition system in 3-person team and executed static firing tests for thrust validation</li>
             </ul>
              <article class="project-name">
-                <span class="resume-project">Additional Projects:,</span>
+                <span class="resume-project">Additional Projects:</span>
+                <span class = "add">Twin Jet Airliner | Survival Video Game | Lie Detector</span>
             </article>
-            <ul>
-                <li>Wealth and Health Problems in Africa: Used machine learning techniques within MATLAB to read a substantial dataset and develop potential solutions to better societal health for African nations </li>
-                <li>Truss Bridge: Collaborated with 2 to optimize materials to hold 1kg weight by developing MATLAB program to calculate a theoretical buckling strength and critical member based on joint placement and member lengths</li>
-            </ul>
+           
 
         </section>
+
+<!--SKILLS-->
+
         <section class = skills>
             <h2>SKILLS</h2>
             <hr>
+            
             <article class="mechanical">
                 <span class="skill-type">Mechanical:</span>
-                <span class ="skill-list">Lathe, Mill, Soldering, 3D Printing, Laser Cutting, Circuits, Oscilloscope, Water Jet</span>
+                <span class ="skill-list">CNC Lathe, CNC Mill, Wire EDM, Soldering, 3D Printing, Laser Cutting, Oscilloscope, Water Jet, Circuits</span>
             </article>
             <article class="Software">
                 <span class="skill-type">Software:</span>
-                <span class ="skill-list">SolidWorks, FEA, MATLAB, COMSOL, GD&T, C, Java, Arduino, Onshape, Microsoft Office, CHARM</span>
+                <span class ="skill-list">SolidWorks, Fusion 360, GD&T FEA, MATLAB, HTML, CSS, Java, Arduino, Microsoft Office, CHARM, COMSOL</span>
             </article>
 
         </section>
+
+<!--ACTIVITIES-->
+    
         <section class = activities>
             
             <h2>ACTIVITIES</h2>
             <hr>
 
             <article class="activity">
-                <span class="act">BU Tau Kappa Epsilon, Founding Father and President/member since</span>
-                <span class ="skill-list">February 2023</span>
+                <span class="act">President and Founding Father of BU Tau Kappa Epsilon - member since</span>
+                <span class ="date2">February 2023</span>
             </article>
             <article class="activity">
-                <span class="act">Greek Life Sexual Assault Prevention, member since </span>
+                <span class="act">Greek Life Sexual Assault Prevention - representative since </span>
                 <span class ="date2">September 2023</span>
             </article>
 
