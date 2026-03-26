@@ -22,7 +22,7 @@
 
 nav,
 .contact {
-  background-color:aqua;
+  background-color:rgb(201, 83, 83);
   padding: 20px;
 
   max-width: 700px;   
@@ -179,8 +179,124 @@ hr{
   margin-top:3px;
  }
 
+.papers {
+  position: relative;
+  width: 560px;
+  height: 560px;
+  margin: 100px auto;
+}
+
+.paper {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.25, 1.5, 0.5, 1), z-index 0.2s ease;
+}
+
+.paper img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+/* projects page */
+.project-paper {
+  width: 100%;
+  top: 50px;
+  left: -50px;
+  transform: rotate(-6deg);
+  z-index: 1;
+}
+
+/* whole resume + headshot group */
+.resume-cluster {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 100%;
+  height: 100%;
+  transform: rotate(6deg);
+  transform-origin: top center;
+  transition: transform 0.4s cubic-bezier(0.25, 1.5, 0.5, 1), z-index 0.2s ease;
+  z-index: 2;
+}
+
+/* resume page inside cluster */
+.resume-paper {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* headshot attached to resume top-right */
+.about-paper {
+  width: 180px;
+  top: -45px;
+  right: -20px;
+  transform: rotate(8deg);
+  z-index: 100;
+}
+
+.about-paper img {
+  border-radius: 6px;
+}
+
+/* fan out */
+.papers:hover .project-paper {
+  transform: rotate(-14deg) translateX(-120px) translateY(20px);
+}
+
+.papers:hover .resume-cluster {
+  transform: rotate(14deg) translateX(120px) translateY(-20px);
+}
+
+/* bring hovered project in front of resume, but not above headshot */
+.project-paper:hover {
+  transform: scale(1.1) rotate(0deg) translateY(-20px) !important;
+  z-index: 40;
+}
+
+.resume-cluster:hover {
+  transform: scale(1.1) rotate(0deg) translateY(-20px) !important;
+  z-index: 45;
+}
+
+/* keep headshot always on top */
+.about-paper,
+.about-paper:hover {
+  z-index: 100 !important;
+}
 
 
+
+/* LABEL STYLE */
+.label {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+
+  font-size: 14px;
+  letter-spacing: 0.5px;
+
+  opacity: 0;
+  transition: 0.25s ease;
+
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* SHOW ON HOVER */
+.paper:hover .label {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
 /* padding and width/heights needs to equal: 816/1056
 
 
@@ -199,3 +315,8 @@ hr{
     transform: translateY(0);
   }
 }
+
+
+
+
+
