@@ -1178,10 +1178,6 @@ body {
 }
 
 
-/* ============================================================
-   BOTTOM GALLERY BAR
-   ============================================================ */
-
 .bottom-gallery-bar {
   position: sticky;
   bottom: 0;
@@ -1198,7 +1194,13 @@ body {
   z-index: 998;
 }
 
+.gallery-nav-spacer {
+  width: 100%;
+  height: 78px;
+}
+
 .bottom-gallery-button {
+  grid-column: 2;
   justify-self: center;
   text-decoration: none;
   color: white;
@@ -1226,7 +1228,9 @@ body {
   transition: width var(--transition-std);
 }
 
-.bottom-gallery-button:hover::after { width: 100%; }
+.bottom-gallery-button:hover::after {
+  width: 100%;
+}
 
 .gallery-nav {
   position: relative;
@@ -1238,12 +1242,20 @@ body {
   color: white;
   text-decoration: none;
   height: 78px;
-  padding: 0 30px;
   white-space: nowrap;
 }
 
-.gallery-nav.left  { justify-self: start; }
-.gallery-nav.right { justify-self: end; }
+.gallery-nav.left {
+  grid-column: 1;
+  justify-self: start;
+  padding-left: 30px;
+}
+
+.gallery-nav.right {
+  grid-column: 3;
+  justify-self: end;
+  padding-right: 30px;
+}
 
 .gallery-nav .arrow {
   font-size: 1.35rem;
@@ -1254,7 +1266,6 @@ body {
 .gallery-nav::after {
   content: "";
   position: absolute;
-  left: 30px;
   bottom: 18px;
   width: 0;
   height: 2px;
@@ -1262,8 +1273,20 @@ body {
   transition: width var(--transition-std);
 }
 
-.gallery-nav:hover::after {
-  width: calc(100% - 60px);
+.gallery-nav.left::after {
+  left: 30px;
+}
+
+.gallery-nav.right::after {
+  left: 0;
+}
+
+.gallery-nav.left:hover::after {
+  width: calc(100% - 30px);
+}
+
+.gallery-nav.right:hover::after {
+  width: calc(100% - 30px);
 }
 
 
