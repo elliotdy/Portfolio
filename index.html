@@ -8,35 +8,113 @@
 </head>
 
 <body class="home">
-  <nav>
-    <a href=index.html>Home</a>
-    <a href=projects.html>Projects</a>
-    <a href=resume.html>Resume</a>
+  <!-- NAV -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <span class="nav-name">Elliot Dy</span>
+
+        <a href="projects.html" class="nav-back">
+          <span class="arrow">←</span>
+          <span>Projects</span>
+        </a>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <div class="nav-dropdown">
+          <a href="projects.html" class="nav-dropdown-toggle">Projects</a>
+
+          <div class="dropdown-menu">
+            <a href="projects.html">Project Page</a>
+            <a href="sCO2Turbine.html">sCO2 Turbine</a>
+            <a href="WalkingTable.html">Walking Table</a>
+            <a href="drinkMixer.html">Drink Mixer</a>
+            <a href="balancingCar.html">Motor Wheel Control</a>
+          </div>
+        </div>
+
+        <a href="ufmal.html">UFMAL</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="resume.html">Resume</a>
+      </div>
+    </div>
   </nav>
+
+  <section class="hero-title">
+    <div class="hero-name-block">
+      <h1>Elliot Dy</h1>
+      <p>Mechanical Engineer | Researcher | Builder</p>
+    </div>
+  </section>
+
   <section class="papers">
 
     <a href="projects.html" class="paper project-paper">
-    <span class="label">Projects</span>
-    <img src="images/ProjectPhoto.png" alt="Projects Page">
-  </a>
-
-  <div class="resume-cluster">
-    <a href="resume.html" class="paper resume-paper">
-      <span class="label">Resume</span>
-      <img src="images/ResumePhoto.png" alt="Resume">
+      <span class="label">Projects</span>
+      <img src="images/ProjectPhoto.png" alt="Projects Page">
     </a>
 
-    <a href="aboutme.html" class="paper about-paper">
-      <span class="label">About Me</span>
-      <img src="images/headshot.jpg" alt="About Me">
-    </a>
-  </div>
+    <div class="resume-cluster">
+      <a href="resume.html" class="paper resume-paper">
+        <span class="label">Resume</span>
+        <img src="images/ResumePhoto.png" alt="Resume">
+      </a>
 
-</section>
-  <section class="contact">
-    <h2>Contact Me</h2>
-    <h3>elliotady@gmail.com (802) 557-4337</h3>
+      <a href="aboutme.html" class="paper about-paper">
+        <span class="label">About Me</span>
+        <img src="images/headshot.jpg" alt="About Me">
+      </a>
+    </div>
+
   </section>
+  
+  
+
+  <section class="contact-section">
+  <div class="contact-container">
+
+    <div class="contact-left">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for projects, collaboration, or opportunities.</p>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> 
+          <a href="mailto:elliotady@gmail.com">elliotady@gmail.com</a>
+        </p>
+
+        <p><strong>Phone:</strong> 
+          <a href="tel:18025574337">(802) 557-4337</a>
+        </p>
+
+        <p><strong>LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/elliotdy" target="_blank">
+            linkedin.com/in/elliotdy
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <form 
+      class="contact-form"
+      action="https://formspree.io/f/xkopbwqj"
+      method="POST"
+    >
+      <input type="text" name="name" placeholder="Your Name" required>
+
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <!-- Optional but useful -->
+      <input type="hidden" name="_subject" value="Portfolio Contact Message">
+
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>
 </body>
 
 </html>

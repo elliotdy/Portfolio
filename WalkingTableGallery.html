@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Gallery | Walking Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="projectBody">
+
+  <!-- NAV -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <span class="nav-name">Elliot Dy</span>
+
+        <a href="WalkingTable.html" class="nav-back">
+          <span class="arrow">←</span>
+          <span>Back to Project</span>
+        </a>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <div class="nav-dropdown">
+          <a href="projects.html" class="nav-dropdown-toggle">Projects</a>
+
+          <div class="dropdown-menu">
+            <a href="projects.html">All Projects</a>
+            <a href="sCO2Turbine.html">sCO2 Turbine</a>
+            <a href="WalkingTable.html">Walking Table</a>
+            <a href="drinkMixer.html">Drink Mixer</a>
+          </div>
+        </div>
+
+        <a href="aboutme.html">About Me</a>
+        <a href="resume.html">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="universal-gallery-shell">
+
+    <section class="universal-gallery-header">
+      <p class="section-kicker">WALKING TABLE</p>
+      <h1>Full Gallery</h1>
+      <p>All parts, subsystems, and testing of the walking table.</p>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section class="universal-gallery-grid" data-gallery="walking-table">
+
+      <!-- IMAGES -->
+      <article class="universal-gallery-item" data-type="image" data-src="images/walkingTable/AllParts.jpeg" data-caption="AllParts">
+        <img src="images/walkingTable/AllParts.jpeg"><p>AllParts</p>
+      </article>
+
+      <article class="universal-gallery-item" data-type="image" data-src="images/walkingTable/Bearings.jpeg" data-caption="Bearings">
+        <img src="images/walkingTable/Bearings.jpeg"><p>Bearings</p>
+      </article>
+
+      <article class="universal-gallery-item" data-type="image" data-src="images/walkingTable/LegFinal.jpeg" data-caption="LegFinal">
+        <img src="images/walkingTable/LegFinal.jpeg"><p>LegFinal</p>
+      </article>
+
+      <article class="universal-gallery-item" data-type="image" data-src="images/walkingTable/LegParts.jpeg" data-caption="LegParts">
+        <img src="images/walkingTable/LegParts.jpeg"><p>LegParts</p>
+      </article>
+
+      <article class="universal-gallery-item" data-type="image" data-src="images/walkingTable/SpinnerFinal.jpeg" data-caption="SpinnerFinal">
+        <img src="images/walkingTable/SpinnerFinal.jpeg"><p>SpinnerFinal</p>
+      </article>
+
+      <article class="universal-gallery-item" data-type="image" data-src="images/walkingTable/StrandbeestTableFinalPhoto1.PNG" data-caption="Final Photo">
+        <img src="images/walkingTable/StrandbeestTableFinalPhoto1.PNG"><p>Final Photo</p>
+      </article>
+
+      <!-- VIDEOS -->
+      <article class="universal-gallery-item gallery-video-item" data-type="video" data-src="images/walkingTable/WalkingTable.mp4" data-caption="Walking Table">
+        <video muted>
+          <source src="images/walkingTable/WalkingTable.mp4" type="video/mp4">
+        </video>
+        <p>Walking Table</p>
+      </article>
+
+      <article class="universal-gallery-item gallery-video-item" data-type="video" data-src="images/walkingTable/TwoLegVideo.mp4" data-caption="Two Leg Test">
+        <video muted>
+          <source src="images/walkingTable/TwoLegVideo.mp4" type="video/mp4">
+        </video>
+        <p>Two Leg Test</p>
+      </article>
+
+      <article class="universal-gallery-item gallery-video-item" data-type="video" data-src="images/walkingTable/WiringVideo.mp4" data-caption="Wiring Test">
+        <video muted>
+          <source src="images/walkingTable/WiringVideo.mp4" type="video/mp4">
+        </video>
+        <p>Wiring Test</p>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX (MATCHED EXACTLY) -->
+  <div class="universal-lightbox" id="universalLightbox">
+
+    <button class="universal-lightbox-close" id="universalLightboxClose">
+      &times;
+    </button>
+
+    <button class="universal-lightbox-arrow universal-lightbox-prev" id="universalPrevBtn">
+      &#10094;
+    </button>
+
+    <div class="universal-lightbox-content" id="universalLightboxContent">
+      <p class="universal-lightbox-caption" id="universalLightboxCaption"></p>
+    </div>
+
+    <button class="universal-lightbox-arrow universal-lightbox-next" id="universalNextBtn">
+      &#10095;
+    </button>
+
+  </div>
+
+  
+
+ 
+
+  
+
+  <script src="gallery.js"></script>
+
+</body>
+</html>

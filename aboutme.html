@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="about-page">
+
+   <!-- NAV -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <span class="nav-name">Elliot Dy</span>
+
+        <a href="projects.html" class="nav-back">
+          <span class="arrow">←</span>
+          <span>Projects</span>
+        </a>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <div class="nav-dropdown">
+          <a href="projects.html" class="nav-dropdown-toggle">Projects</a>
+
+          <div class="dropdown-menu">
+            <a href="projects.html">Project Page</a>
+            <a href="sCO2Turbine.html">sCO2 Turbine</a>
+            <a href="WalkingTable.html">Walking Table</a>
+            <a href="drinkMixer.html">Drink Mixer</a>
+            <a href="balancingCar.html">Motor Wheel Control</a>
+          </div>
+        </div>
+
+        <a href="ufmal.html">UFMAL</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="resume.html">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="about-shell">
+    <section class="about-hero">
+      <div class="about-photo-card">
+        <img src="images/headshot.jpg" alt="Portrait of Elliot Dy" class="about-photo" />
+      </div>
+
+      <div class="about-intro-card">
+        <p class="about-kicker">About Me</p>
+        <h1>Elliot Dy</h1>
+        <p class="about-subtitle">Mechanical Engineer | Researcher | Builder</p>
+
+        <p>
+          I am a mechanical engineering student focused on design, prototyping,
+          controls, and product development. I enjoy turning ideas into physical
+          systems through CAD, fabrication, testing, and iteration.
+        </p>
+
+        <p>
+          My work ranges from turbine and energy system concepts to electromechanical
+          devices, motion systems, and research-driven engineering projects. I am
+          especially interested in building things that combine strong technical
+          analysis with clean, practical design.
+        </p>
+
+        <div class="about-tags">
+          <span>Mechanical Design</span>
+          <span>CAD</span>
+          <span>Controls</span>
+          <span>Prototyping</span>
+          <span>Research</span>
+          <span>Testing</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-grid">
+      <article class="about-card">
+        <h2>What I Do</h2>
+        <p>
+          I work on projects involving system design, analysis, manufacturing,
+          and integration. I like solving problems that move from concept sketches
+          to detailed models, prototypes, and final testing.
+        </p>
+      </article>
+
+      <article class="about-card">
+        <h2>Interests</h2>
+        <p>
+          My interests include mechanical systems, energy systems, autonomous
+          systems, product development, and applied engineering research. I enjoy
+          work that blends theory with hands-on execution.
+        </p>
+      </article>
+
+      <article class="about-card">
+        <h2>Approach</h2>
+        <p>
+          I value clear design thinking, strong attention to detail, and practical
+          iteration. My goal is to make systems that are not only functional, but
+          also well-integrated, manufacturable, and thoughtfully engineered.
+        </p>
+      </article>
+
+      <article class="about-card">
+        <h2>Outside of Engineering</h2>
+        <p>
+          Outside of technical work, I enjoy building creative side projects,
+          learning new tools, and exploring ways to improve both design quality
+          and user experience.
+        </p>
+      </article>
+    </section>
+
+    <section class="about-story">
+      <div class="about-story-card">
+        <h2>My Background</h2>
+        <p>
+          I have developed my experience through academic projects, hands-on design
+          work, and research. Across these experiences, I have built skills in
+          SolidWorks, fabrication planning, embedded systems, experimental work,
+          and engineering communication.
+        </p>
+        <p>
+          I am motivated by projects that require both careful technical thinking
+          and real-world execution. Whether I am modeling a system, assembling a
+          prototype, or refining a final design, I enjoy the process of making
+          ideas work in practice.
+        </p>
+      </div>
+    </section>
+
+    
+  </main>
+
+
+
+  
+  <section class="contact-section">
+  <div class="contact-container">
+
+    <div class="contact-left">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for projects, collaboration, or opportunities.</p>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> 
+          <a href="mailto:elliotady@gmail.com">elliotady@gmail.com</a>
+        </p>
+
+        <p><strong>Phone:</strong> 
+          <a href="tel:18025574337">(802) 557-4337</a>
+        </p>
+
+        <p><strong>LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/elliotdy" target="_blank">
+            linkedin.com/in/elliotdy
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <form 
+      class="contact-form"
+      action="https://formspree.io/f/xkopbwqj"
+      method="POST"
+    >
+      <input type="text" name="name" placeholder="Your Name" required>
+
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <!-- Optional but useful -->
+      <input type="hidden" name="_subject" value="Portfolio Contact Message">
+
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+</body>
+</html>

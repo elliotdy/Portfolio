@@ -1,15 +1,185 @@
 <!DOCTYPE html>
-<html lang = "en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Walking Table</title>
-  </head>
-  <body>
-    <h3><a href = projects.html>back</a></h3>
-    <h1>Walking Table/h1>
-    <h2>Hello</h2>
-    <p>This is my walking table</p>
-   <h2>Contact Me</h2>
-   <h3>elliotady@gmail.com (802) 557-4337</h3>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Walking Table</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="slider.js"></script>
+</head>
+
+<body class="projectBody">
+
+ <!-- NAV -->
+  <nav class="top-nav">
+    <div class="nav-container">
+      <div class="nav-left">
+        <span class="nav-name">Elliot Dy</span>
+
+        <a href="projects.html" class="nav-back">
+          <span class="arrow">←</span>
+          <span>Projects</span>
+        </a>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+
+        <div class="nav-dropdown">
+          <a href="projects.html" class="nav-dropdown-toggle">Projects</a>
+
+          <div class="dropdown-menu">
+            <a href="projects.html">Project Page</a>
+            <a href="sCO2Turbine.html">sCO2 Turbine</a>
+            <a href="WalkingTable.html">Walking Table</a>
+            <a href="drinkMixer.html">Drink Mixer</a>
+            <a href="balancingCar.html">Motor Wheel Control</a>
+          </div>
+        </div>
+
+        <a href="ufmal.html">UFMAL</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="resume.html">Resume</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="project-detail-shell">
+
+    <!-- HERO -->
+    <section class="project-hero-card">
+
+      <div class="project-hero-text">
+        <p class="project-kicker">Mechanism Design • Linkages • Prototyping</p>
+        <h1>Walking Table</h1>
+
+        <p class="project-lead">
+          A Strandbeest-inspired walking table that converts rotational motion into a smooth walking gait using multi-link mechanisms.
+        </p>
+
+        <div class="project-tags">
+          <span>Mechanisms</span>
+          <span>Linkage Design</span>
+          <span>CAD</span>
+          <span>Prototyping</span>
+        </div>
+      </div>
+
+      <div class="project-hero-image">
+        <div class="image-slider hero-style-slider"
+          data-images="images/walkingTable/StrandbeestTableFinalPhoto1.PNG, images/walkingTable/LegFinal.jpeg, images/walkingTable/SpinnerFinal.jpeg"
+          data-alt="Walking table images">
+
+          <div class="slider-stage">
+            <img class="slider-side-image slider-side-left">
+            <img class="slider-main-image">
+            <img class="slider-side-image slider-side-right">
+
+            <button class="slider-arrow left">‹</button>
+            <button class="slider-arrow right">›</button>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FEATURE -->
+    <section class="project-feature-grid">
+
+      <article class="feature-card feature-wide">
+        <video controls muted autoplay loop>
+          <source src="images/walkingTable/WalkingTable.mp4" type="video/mp4">
+        </video>
+
+        <div class="feature-copy">
+          <h3>Walking Motion</h3>
+          <p>Final walking gait driven by rotational input.</p>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <img src="images/walkingTable/AllParts.jpeg">
+        <div class="feature-copy">
+          <h3>Full Assembly</h3>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- BACK TO TOP -->
+    <div class="back-to-top-wrapper">
+      <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+        ↑ Back to Top
+      </button>
+    </div>
+
+  </main>
+
+  <!-- BOTTOM BAR -->
+  <footer class="bottom-gallery-bar">
+
+    <a href="sCO2Turbine.html" class="gallery-nav left">
+      <span class="arrow">←</span>
+      <span class="title">sCO2 Turbine</span>
+    </a>
+
+    <a href="WalkingTableGallery.html" class="bottom-gallery-button">
+      Full Gallery
+    </a>
+
+    <a href="drinkMixer.html" class="gallery-nav right">
+      <span class="title">Drink Mixer</span>
+      <span class="arrow">→</span>
+    </a>
+
+  </footer>
+
+  <!-- CONTACT -->
+  <section class="contact-section">
+  <div class="contact-container">
+
+    <div class="contact-left">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for projects, collaboration, or opportunities.</p>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> 
+          <a href="mailto:elliotady@gmail.com">elliotady@gmail.com</a>
+        </p>
+
+        <p><strong>Phone:</strong> 
+          <a href="tel:18025574337">(802) 557-4337</a>
+        </p>
+
+        <p><strong>LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/elliotdy" target="_blank">
+            linkedin.com/in/elliotdy
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <form 
+      class="contact-form"
+      action="https://formspree.io/f/xkopbwqj"
+      method="POST"
+    >
+      <input type="text" name="name" placeholder="Your Name" required>
+
+      <input type="email" name="email" placeholder="Your Email" required>
+
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+      <!-- Optional but useful -->
+      <input type="hidden" name="_subject" value="Portfolio Contact Message">
+
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+</body>
 </html>
