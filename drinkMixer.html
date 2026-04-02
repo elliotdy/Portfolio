@@ -73,7 +73,7 @@
       <div class="project-hero-image">
         <div
           class="image-slider hero-style-slider"
-          data-images="images/drinkMixer/DrinkMixerPrototype.PNG, images/drinkMixer/FinalProduct.png, images/drinkMixer/Frame.png, images/drinkMixer/Frame2.png"
+          data-images="images/drinkMixer/DrinkMixerHero.PNG, images/drinkMixer/FinalDrinkMixer.jpeg"
           data-alt="Drink mixer project image">
           <div class="slider-stage">
             <img class="slider-side-image slider-side-left" alt="Previous image preview">
@@ -112,58 +112,50 @@
 
     </section>
 
-    <!-- FEATURE IMAGES -->
-    <section class="project-feature-grid">
+    <!-- VIDEO + TEXT SHOWCASE CARD -->
+    <section class="video-text-showcase-section">
 
-      <article class="feature-card feature-wide">
-        <img src="images/drinkMixer/FinalProduct.png" alt="Drink mixer final product">
+      <article class="video-text-showcase-card">
 
-        <div class="feature-copy">
-          <h3>Final Prototype</h3>
+        <!-- FULL WIDTH TITLE -->
+        <div class="video-text-header">
+          <h2>Product And Prototype</h2>
+        </div>
+
+        <!-- LEFT VIDEO -->
+        <div class="video-text-side">
+          <video controls muted autoplay loop playsinline>
+            <source src="images/drinkMixer/DrinkMixerVideo.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- CENTER TEXT -->
+        <div class="video-text-center">
           <p>
-            The completed system combines the structural frame, driven components,
-            and cup interface into a single working prototype.
+            This section highlights the walking table mechanism in motion from multiple views.
+            By placing video on both sides, the central text explains how rotational input is
+            transferred through the linkage system to generate a stable walking gait.
+          </p>
+
+          <p>
+            The design was inspired by Strandbeest-style leg geometry, where each leg assembly
+            follows a repeatable path that helps maintain smooth forward motion. Watching the
+            system from both sides makes it easier to understand coordination and support.
           </p>
         </div>
-      </article>
 
-      <article class="feature-card">
-        <div
-          class="image-slider card-style-slider"
-          data-images="images/drinkMixer/Frame.png, images/drinkMixer/Frame2.png, images/drinkMixer/DrinkMixerPrototype.PNG"
-          data-alt="Drink mixer frame images">
-          <div class="slider-stage">
-            <img class="slider-side-image slider-side-left" alt="Previous image preview">
-            <img class="slider-main-image" alt="Main slider image">
-            <img class="slider-side-image slider-side-right" alt="Next image preview">
-
-            <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
-            <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
-          </div>
+        <!-- RIGHT MEDIA -->
+        <div class="video-text-side">
+          <video controls muted autoplay loop playsinline>
+            <source src="images/drinkMixer/PrototypeVideo.mp4" type="video/mp4">
+          </video>
         </div>
 
-        <div class="feature-copy">
-          <h3>Frame Structure</h3>
-          <p>
-            These images show the main structural layout that supports the motion
-            and mixing subsystems.
-          </p>
-        </div>
-      </article>
-
-      <article class="feature-card">
-        <img src="images/drinkMixer/CupHolderCAD.png" alt="Cup holder CAD model">
-
-        <div class="feature-copy">
-          <h3>Cup Holder</h3>
-          <p>
-            The cup holder was designed to locate and support the drink container
-            during operation.
-          </p>
-        </div>
       </article>
 
     </section>
+
+   
 
     <!-- PROCESS -->
     <section class="project-process-section">
@@ -313,10 +305,28 @@
 
     </section>
 
+    <!-- WHAT I LEARNED / IMPROVEMENTS -->
+    <section class="project-reflection-section">
+
+      <div class="reflection-wide-card">
+        <h2>What I Learned & Future Improvements</h2>
+
+        <p>
+          This project strengthened my ability to design for manufacturability while
+          balancing precision and practicality. I gained hands-on experience with
+          CNC machining workflows, including proper setup, toolpath planning, and
+          tolerancing for real components. Working through the full process—from CAD
+          to machining to assembly—highlighted how small design decisions directly
+          impact fabrication efficiency and final fit.
+
+      </div>
+
+    </section>
+
     <!-- BACK TO TOP -->
     <div class="back-to-top-wrapper">
       <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-        ↑ Back to Top
+        Back to Top
       </button>
     </div>
 

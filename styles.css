@@ -962,6 +962,19 @@ body {
   align-items: center;
 }
 
+.project-hero-card.reversed {
+  grid-template-columns: var(--reversed-image-width, 2.7fr) 1fr;
+  align-items: start;
+}
+
+.project-hero-card.reversed .project-hero-image {
+  order: -1;
+}
+
+.project-hero-card.reversed .hero-style-slider .slider-stage {
+  min-height: var(--reversed-image-height, 480px);
+}
+
 .project-kicker,
 .section-kicker {
   margin: 0 0 10px;
@@ -1094,12 +1107,18 @@ body {
 }
 
 /* Standalone images only — preserve original aspect ratio */
-.process-card > img {
+/* Standalone media inside process cards — preserve original aspect ratio */
+.process-card > img,
+.process-card > video {
   width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
   margin-bottom: 18px;
+}
+
+.process-card > video {
+  background: #f3f3f1;
 }
 
 .process-card h3,
@@ -1288,6 +1307,19 @@ body {
 .gallery-nav.right:hover::after {
   width: calc(100% - 30px);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ============================================================
@@ -1940,4 +1972,499 @@ body {
   .universal-gallery-shell {
     padding: 24px 18px 44px;
   }
+}
+
+
+
+/* ============================================================
+   IMAGE EXPAND FEATURE
+   ============================================================ */
+
+/* EXPAND BUTTON — BOTTOM RIGHT CLEAN STYLE */
+
+
+
+.media-expand-wrapper {
+  position: relative;
+}
+
+
+.expand-media-button {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: none;
+
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 20;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.expand-media-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* MODAL — SHOW PAGE BEHIND */
+.media-expand-modal {
+  position: fixed;
+  inset: 0;
+
+  /* transparent background instead of solid */
+  background: rgba(0, 0, 0, 0.35);
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 4000;
+
+  backdrop-filter: blur(4px); /* optional but VERY nice */
+}
+
+.media-expand-modal.show {
+  display: flex;
+}
+
+.media-expand-dialog {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.media-expand-image {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.media-expand-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: none;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.media-expand-close:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+/* Prevent scrolling when open */
+body.media-expand-open {
+  overflow: hidden;
+}
+
+/* CLOSE (X) BUTTON — FIXED */
+.media-expand-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  border: none;
+
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 10;
+
+  backdrop-filter: blur(6px);
+
+  transition: 
+    transform 0.2s ease,
+    background 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.media-expand-close:hover {
+  background: rgba(0, 0, 0, 0.85);
+  transform: scale(1.1);
+}
+
+.media-expand-close:active {
+  transform: scale(0.95);
+}
+
+/* ============================================================
+   PROJECT REFLECTION (WIDE)
+   ============================================================ */
+
+.project-reflection-section {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.reflection-wide-card {
+  background: var(--color-card-bg);
+  border-radius: var(--radius-xl);
+  padding: 34px 34px;
+
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.reflection-wide-card h2 {
+  margin: 0 0 14px;
+  font-size: 2.2rem;
+  font-family: var(--font-serif);
+  color: var(--color-text);
+}
+
+.reflection-wide-card p {
+  margin: 0 0 16px;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  max-width: 900px; /* keeps text readable */
+}
+
+.reflection-wide-card p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
+/* ============================================================
+   VIDEO + TEXT SHOWCASE CARD (FIXED RATIO FROM FIRST VIDEO)
+   ============================================================ */
+
+.video-text-showcase-section {
+  margin-bottom: 28px;
+}
+
+.video-text-showcase-card {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  gap: 26px;
+
+  background: var(--color-card-bg);
+  border-radius: var(--radius-xl);
+  padding: 34px 36px;
+
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+/* HEADER */
+.video-text-header {
+  grid-column: 1 / -1;
+  margin-bottom: 10px;
+}
+
+.video-text-header h2 {
+  margin: 0 0 10px;
+  font-size: 2.8rem;
+  line-height: 0.95;
+  font-family: var(--font-serif);
+  color: var(--color-text);
+}
+
+/* SIDE MEDIA */
+.video-text-side {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* First video sizes naturally; second matches via JS-set aspect ratio */
+.video-text-side {
+  display: flex;
+  align-items: flex-start;
+}
+
+.video-text-side video,
+.video-text-side img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  background: #000;
+  object-fit: cover;
+}
+
+/* TEXT */
+.video-text-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.video-text-center p {
+  margin: 0 0 16px;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+.video-text-center p:last-child {
+  margin-bottom: 0;
+}
+
+/* MOBILE */
+@media (max-width: 980px) {
+  .video-text-showcase-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ============================================================
+   STACKED MEDIA + TEXT CARD
+   ============================================================ */
+
+.media-stack-section {
+  margin-bottom: 28px;
+}
+
+.media-stack-card {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr; /* left media column / right text column */
+  gap: 28px;
+  align-items: start;
+
+  background: var(--color-card-bg);
+  border-radius: var(--radius-xl);
+  padding: 34px 36px;
+
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+/* LEFT SIDE (STACKED MEDIA) */
+.media-stack-left {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.media-stack-item {
+  width: 100%;
+}
+
+.media-stack-item img,
+.media-stack-item video {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+
+  display: block;
+  border-radius: 18px;
+  background: #f3f3f1;
+}
+
+/* RIGHT SIDE TEXT */
+.media-stack-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.media-stack-right h2 {
+  margin: 0 0 14px;
+  font-size: 2.6rem;
+  line-height: 0.95;
+  font-family: var(--font-serif);
+  color: var(--color-text);
+}
+
+.media-stack-right p {
+  margin: 0 0 16px;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+.media-stack-right p:last-child {
+  margin-bottom: 0;
+}
+
+/* MOBILE */
+@media (max-width: 980px) {
+  .media-stack-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+.process-grid-two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* ============================================================
+   EXPAND / FULLSCREEN MEDIA — FIXED ASPECT RATIO
+   ============================================================ */
+
+/* MODAL BACKDROP */
+.media-expand-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 4000;
+
+  backdrop-filter: blur(4px);
+}
+
+.media-expand-modal.show {
+  display: flex;
+}
+
+/* DIALOG */
+.media-expand-dialog {
+  position: relative;
+
+  width: auto;
+  height: auto;
+
+  max-width: 95vw;
+  max-height: 95vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🔥 KEY FIX — PREVENT ZOOM / CROPPING */
+.media-expand-image,
+.media-expand-video {
+  width: auto;
+  height: auto;
+
+  max-width: 95vw;
+  max-height: 90vh;
+
+  object-fit: contain;   /* 👈 CRITICAL: no zoom */
+  aspect-ratio: auto;    /* 👈 use real video ratio */
+
+  display: block;
+  background: black;
+  border-radius: 12px;
+}
+
+/* CLOSE BUTTON */
+.media-expand-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  border: none;
+
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+
+  font-size: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 10;
+
+  backdrop-filter: blur(6px);
+
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.media-expand-close:hover {
+  background: rgba(0, 0, 0, 0.85);
+  transform: scale(1.1);
+}
+
+/* LOCK SCROLL */
+body.media-expand-open {
+  overflow: hidden;
+}
+/* ============================================================
+   SLIDER — VIDEO SUPPORT
+   ============================================================ */
+
+/* Main video — fills the stage without cropping */
+.slider-main-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 3;
+  background: transparent;
+  border-radius: inherit;
+}
+
+/* Stage background goes dark only when explicitly showing a video */
+.slider-stage--video {
+  background: transparent;
+}
+
+/* Placeholder div used in mixed-media sliders */
+.slider-main-media {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  align-items: stretch;
+}
+
+.slider-main-media img,
+.slider-main-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: transparent;
+}
+
+
+
+/* Modal — video element inside the expand dialog */
+.media-expand-video {
+  width: auto;
+  height: auto;
+  max-width: 95vw;
+  max-height: 90vh;
+  object-fit: contain;
+  aspect-ratio: auto;
+  display: block;
+  background: black;
+  border-radius: 12px;
 }

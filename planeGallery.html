@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Aircraft Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full Gallery | Twin Jet Airliner</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="gallery.js" defer></script>
 </head>
 
 <body class="projectBody">
 
-   <!-- NAV -->
+  <!-- NAV -->
   <nav class="top-nav">
     <div class="nav-container">
       <div class="nav-left">
@@ -44,48 +44,59 @@
   </nav>
 
 
-  <main class="gallery-page-shell">
+  <main class="universal-gallery-shell">
+    <section class="universal-gallery-header">
+      <p class="section-kicker">TWIN JET AIRLINER</p>
+      <h1>Full Gallery</h1>
+      <p>Full design documentation, CAD models, and analysis drawings from the aircraft design project.</p>
+    </section>
 
-    <div class="gallery-page-header">
-      <h1>Aircraft Gallery</h1>
-      <p>Full design documentation, CAD models, and analysis.</p>
-    </div>
+    <section class="universal-gallery-grid" data-gallery="plane">
 
-    <section class="gallery-page-masonry">
-
-      <article class="gallery-masonry-item">
-        <img src="images/plane/FinalSolidModel.png">
-        <p>FinalSolidModel.png</p>
+      <article class="universal-gallery-item" data-type="image" data-src="images/plane/FinalSolidModel.png" data-caption="Final Solid Model">
+        <img src="images/plane/FinalSolidModel.png" alt="Final Solid Model">
+        <p>Final Solid Model</p>
       </article>
 
-      <article class="gallery-masonry-item">
-        <img src="images/plane/FullPlaneDraw.png">
-        <p>FullPlaneDraw.png</p>
+      <article class="universal-gallery-item" data-type="image" data-src="images/plane/FullPlaneDraw.png" data-caption="Full Plane Drawing">
+        <img src="images/plane/FullPlaneDraw.png" alt="Full Plane Drawing">
+        <p>Full Plane Drawing</p>
       </article>
 
-      <article class="gallery-masonry-item">
-        <img src="images/plane/FullWingWithFlapper.png">
-        <p>FullWingWithFlapper.png</p>
+      <article class="universal-gallery-item" data-type="image" data-src="images/plane/FullWingWithFlapper.png" data-caption="Full Wing With Flapper">
+        <img src="images/plane/FullWingWithFlapper.png" alt="Full Wing With Flapper">
+        <p>Full Wing With Flapper</p>
       </article>
 
-      <article class="gallery-masonry-item">
-        <img src="images/plane/HorizontalStabilizerDraw.png">
-        <p>HorizontalStabilizerDraw.png</p>
+      <article class="universal-gallery-item" data-type="image" data-src="images/plane/HorizontalStabilizerDraw.png" data-caption="Horizontal Stabilizer Drawing">
+        <img src="images/plane/HorizontalStabilizerDraw.png" alt="Horizontal Stabilizer Drawing">
+        <p>Horizontal Stabilizer Drawing</p>
       </article>
 
-      <article class="gallery-masonry-item">
-        <img src="images/plane/VerticleStabilizerDraw.png">
-        <p>VerticleStabilizerDraw.png</p>
+      <article class="universal-gallery-item" data-type="image" data-src="images/plane/VerticleStabilizerDraw.png" data-caption="Vertical Stabilizer Drawing">
+        <img src="images/plane/VerticleStabilizerDraw.png" alt="Vertical Stabilizer Drawing">
+        <p>Vertical Stabilizer Drawing</p>
       </article>
 
-      <article class="gallery-masonry-item">
-        <img src="images/plane/FlapperDraw.png">
-        <p>FlapperDraw.png</p>
+      <article class="universal-gallery-item" data-type="image" data-src="images/plane/FlapperDraw.png" data-caption="Flapper Drawing">
+        <img src="images/plane/FlapperDraw.png" alt="Flapper Drawing">
+        <p>Flapper Drawing</p>
       </article>
 
     </section>
-
   </main>
 
+  <div class="universal-lightbox" id="universalLightbox">
+    <button class="universal-lightbox-close" id="universalLightboxClose" aria-label="Close gallery">&times;</button>
+    <button class="universal-lightbox-arrow universal-lightbox-prev" id="universalPrevBtn" aria-label="Previous item">&#10094;</button>
+
+    <div class="universal-lightbox-content" id="universalLightboxContent">
+      <p class="universal-lightbox-caption" id="universalLightboxCaption"></p>
+    </div>
+
+    <button class="universal-lightbox-arrow universal-lightbox-next" id="universalNextBtn" aria-label="Next item">&#10095;</button>
+  </div>
+
+  <script src="gallery.js"></script>
 </body>
 </html>

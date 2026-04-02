@@ -1,0 +1,44 @@
+<button class="expand-media-button" aria-label="Expand image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+        <path d="M4 9V4h5"></path>
+        <path d="M20 9V4h-5"></path>
+        <path d="M4 15v5h5"></path>
+        <path d="M20 15v5h-5"></path>
+    </svg>
+</button>
+
+
+
+
+
+<div class="media-stack-item media-expand-wrapper expandable-media">
+    <img src="images/walkingTable/AllParts.jpeg" alt="Walking table parts">
+
+    <button class="expand-media-button" aria-label="Expand image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M4 9V4h5"></path>
+            <path d="M20 9V4h-5"></path>
+            <path d="M4 15v5h5"></path>
+            <path d="M20 15v5h-5"></path>
+        </svg>
+    </button>
+</div>
+
+
+<div class="slider-stage">
+    <img class="slider-side-image slider-side-left">
+    <img class="slider-main-image">
+    <img class="slider-side-image slider-side-right">
+
+    <button class="slider-arrow left">‹</button>
+    <button class="slider-arrow right">›</button>
+
+    <button class="expand-media-button" aria-label="Expand image">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M4 9V4h5"></path>
+            <path d="M20 9V4h-5"></path>
+            <path d="M4 15v5h5"></path>
+            <path d="M20 15v5h-5"></path>
+        </svg>
+    </button>
+</div>
