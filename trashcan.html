@@ -71,21 +71,17 @@
         </div>
       </div>
 
-      <div class="project-hero-image">
-        <div
-          class="image-slider hero-style-slider"
-          data-images="images/trashcan/TrashCanAssembly.PNG, images/trashcan/TrashCanFront.png, images/trashcan/TrashcanLinkageFront.png, images/trashcan/TrashcanLinkageSide.png"
-          data-alt="Motorized trash can project image">
-          <div class="slider-stage">
-            <img class="slider-side-image slider-side-left" alt="Previous image preview">
-            <img class="slider-main-image" alt="Main slider image">
-            <img class="slider-side-image slider-side-right" alt="Next image preview">
-
-            <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
-            <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
-          </div>
-        </div>
-      </div>
+      <div class="project-hero-image expandable-media media-expand-wrapper">
+  <img src="images/trashcan/TrashCanAssembly.PNG" alt="Motorized trash can project image" style="width: 100%; border-radius: 18px; display: block;">
+  <button class="expand-media-button" aria-label="Expand image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+      <path d="M4 9V4h5"></path>
+      <path d="M20 9V4h-5"></path>
+      <path d="M4 15v5h5"></path>
+      <path d="M20 15v5h-5"></path>
+    </svg>
+  </button>
+</div>
 
     </section>
 
@@ -114,205 +110,172 @@
 
     </section>
 
-    <!-- FEATURE IMAGES -->
-    <section class="project-feature-grid">
+    <!-- GD&T and SolidWorks -->
+    <section class="project-hero-card reversed">
 
-      <article class="feature-card feature-wide">
-        <img src="images/trashcan/TrashCanAssembly.PNG" alt="Trash can assembly">
+      <video controls muted autoplay loop playsinline style="width: 100%; display: block; border-radius: 18px;">
+        <source src="images/trashCan/TrashCanAssemblyAngle.mp4" type="video/mp4">
+      </video>
 
-        <div class="feature-copy">
-          <h3>Main Assembly</h3>
-          <p>
-            The full assembly view captures the major components of the motorized
-            trash can concept and provides the clearest overview of the design.
-          </p>
-        </div>
-      </article>
-
-      <article class="feature-card">
-        <div
-          class="image-slider card-style-slider"
-          data-images="images/trashcan/TrashCanFront.png, images/trashcan/TrashcanLinkageFront.png, images/trashcan/TrashcanLinkageISO.png"
-          data-alt="Trash can front and linkage views">
-          <div class="slider-stage">
-            <img class="slider-side-image slider-side-left" alt="Previous image preview">
-            <img class="slider-main-image" alt="Main slider image">
-            <img class="slider-side-image slider-side-right" alt="Next image preview">
-
-            <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
-            <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
-          </div>
-        </div>
-
-        <div class="feature-copy">
-          <h3>Front View Development</h3>
-          <p>
-            These images show the front configuration of the trash can and how the
-            linkage system was studied from a direct view.
-          </p>
-        </div>
-      </article>
-
-      <article class="feature-card">
-        <img src="images/trashcan/TrashcanLinkageSide.png" alt="Trash can linkage side view">
-
-        <div class="feature-copy">
-          <h3>Side Linkage Study</h3>
-          <p>
-            The side view highlights the mechanism geometry and clarifies how the
-            linkage behaves through the opening motion.
-          </p>
-        </div>
-      </article>
+      <div class="feature-copy">
+        <h3>GD&T and SolidWorks</h3>
+        <p>
+          Every component in the full turbine assembly was designed for manufacturability and
+          performance or specified for intended purpose. Technical drawings help during machining with proper
+          dimensioning and tolerances.
+        </p>
+      </div>
 
     </section>
 
     <!-- PROCESS -->
     <section class="project-process-section">
       <div class="section-heading-row">
-        <p class="section-kicker">Mechanism Development</p>
-        <h2>Design Highlights</h2>
+        <p class="section-kicker">Build Process</p>
+        <h2>Subsystem Highlights</h2>
       </div>
 
       <div class="process-grid">
 
         <article class="process-card">
-          <div
-            class="image-slider card-style-slider process-style-slider"
-            data-images="images/trashcan/TrashcanLinkageFront.png, images/trashcan/TrashcanLinkageSide.png, images/trashcan/TrashcanLinkageISO.png"
-            data-alt="Linkage study images">
-            <div class="slider-stage">
-              <img class="slider-side-image slider-side-left" alt="Previous image preview">
-              <img class="slider-main-image" alt="Main slider image">
-              <img class="slider-side-image slider-side-right" alt="Next image preview">
-
-              <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
-              <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
-            </div>
+          <div class="expandable-media media-expand-wrapper">
+            <img src="images/trashCan/TrashcanMathIllustrationsAssignment.png" alt="End cap components"
+              style="width:100%; display:block; border-radius:18px 18px 0 0;">
+            <button class="expand-media-button" aria-label="Expand image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M4 9V4h5"></path>
+                <path d="M20 9V4h-5"></path>
+                <path d="M4 15v5h5"></path>
+                <path d="M20 15v5h-5"></path>
+              </svg>
+            </button>
           </div>
-
-          <h3>Linkage Geometry</h3>
-          <p>
-            Multiple views of the linkage helped study pivot relationships,
-            travel direction, and how the opening mechanism could be packaged.
-          </p>
+          <h3>End Caps</h3>
+          <p>Circular aluminum stock was faced, bored, and drilled to create the end caps on the CNC Mill with Fusion360
+            Cam.</p>
         </article>
 
         <article class="process-card">
-          <div
-            class="image-slider card-style-slider process-style-slider"
-            data-images="images/trashcan/TrashcanMathIllustrationsAssignment.png, images/trashcan/TrashCanMathIllustrationsRefined.png"
-            data-alt="Mechanism illustration images">
-            <div class="slider-stage">
-              <img class="slider-side-image slider-side-left" alt="Previous image preview">
-              <img class="slider-main-image" alt="Main slider image">
-              <img class="slider-side-image slider-side-right" alt="Next image preview">
-
-              <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
-              <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
-            </div>
+          <div class="expandable-media media-expand-wrapper">
+            <img src="images/trashCan/TrashCanMathIllustrationsRefined.png" alt="End cap components"
+              style="width:100%; display:block; border-radius:18px 18px 0 0;">
+            <button class="expand-media-button" aria-label="Expand image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M4 9V4h5"></path>
+                <path d="M20 9V4h-5"></path>
+                <path d="M4 15v5h5"></path>
+                <path d="M20 15v5h-5"></path>
+              </svg>
+            </button>
           </div>
-
-          <h3>Illustration Refinement</h3>
-          <p>
-            These illustration sets were used to communicate the mechanism more
-            clearly and refine how the system behavior was presented.
-          </p>
+          <h3>End Caps</h3>
+          <p>Circular aluminum stock was faced, bored, and drilled to create the end caps on the CNC Mill with Fusion360
+            Cam.</p>
         </article>
 
         <article class="process-card">
-          <div
-            class="image-slider card-style-slider process-style-slider"
-            data-images="images/trashcan/TrashCanAssembly.PNG, images/trashcan/TrashCanFront.png, images/trashcan/TrashcanLinkageSide.png"
-            data-alt="Assembly development images">
-            <div class="slider-stage">
-              <img class="slider-side-image slider-side-left" alt="Previous image preview">
-              <img class="slider-main-image" alt="Main slider image">
-              <img class="slider-side-image slider-side-right" alt="Next image preview">
-
-              <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
-              <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
-            </div>
-          </div>
-
-          <h3>Concept Integration</h3>
+          <video controls muted autoplay loop>
+            <source src="images/trashCan/TrashCanAssemblyside.mp4" type="video/mp4">
+          </video>
+           <h3>Wire EDM</h3>
           <p>
-            Bringing together the assembly, linkage, and illustrations helped define
-            the final concept and explain how the full system was intended to work.
+            The aluminum enclosure was machined in the CNC Mill and serves as the static housing for the spinning rotor.
           </p>
         </article>
 
       </div>
     </section>
 
-    <!-- EXTRA FEATURE ROW -->
-    <section class="project-feature-grid">
+    <!-- Electronics -->
+    <section class="project-process-section">
+      <div class="section-heading-row">
+        <p class="section-kicker">Electronic Design</p>
+        <h2>Wiring Highlights</h2>
+      </div>
 
-      <article class="feature-card">
-        <img src="images/trashcan/TrashcanMathIllustrationsAssignment.png" alt="Trash can mechanism illustration assignment">
+      <div class="process-grid process-grid-two">
 
-        <div class="feature-copy">
-          <h3>Initial Illustration Set</h3>
+        <article class="process-card">
+          <div class="image-slider card-style-slider process-style-slider"
+            data-images="images/trashCan/TrashcanLinkageISO.png, images/trashCan/TrashcanLinkageFront.png,images/trashCan/TrashcanLinkageSide.png"
+            data-alt="End cap components image">
+            <div class="slider-stage">
+              <img class="slider-side-image slider-side-left" alt="Previous image preview">
+
+              <div class="slider-main-media"></div>
+
+              <img class="slider-side-image slider-side-right" alt="Next image preview">
+
+              <button class="slider-arrow left" type="button" aria-label="Previous media">‹</button>
+              <button class="slider-arrow right" type="button" aria-label="Next media">›</button>
+
+              <button class="expand-media-button" aria-label="Expand media">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                  <path d="M4 9V4h5"></path>
+                  <path d="M20 9V4h-5"></path>
+                  <path d="M4 15v5h5"></path>
+                  <path d="M20 15v5h-5"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <h3>Enclosure</h3>
           <p>
-            Early illustrations were used to map out the geometry and communicate
-            the relationship between mechanism positions.
+            The aluminum enclosure was machined in the CNC Mill and serves as the static housing for the spinning rotor.
           </p>
-        </div>
-      </article>
+        </article>
 
-      <article class="feature-card">
-        <img src="images/trashcan/TrashCanMathIllustrationsRefined.png" alt="Trash can refined mechanism illustration">
+        <article class="process-card">
+          <div class="expandable-media media-expand-wrapper">
+            <img src="images/trashCan/TrashCanFront.png" alt="End cap components"
+              style="width:100%; display:block; border-radius:18px 18px 0 0;">
+            <button class="expand-media-button" aria-label="Expand image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M4 9V4h5"></path>
+                <path d="M20 9V4h-5"></path>
+                <path d="M4 15v5h5"></path>
+                <path d="M20 15v5h-5"></path>
+              </svg>
+            </button>
+          </div>
+          <h3>End Caps</h3>
+          <p>Circular aluminum stock was faced, bored, and drilled to create the end caps on the CNC Mill with Fusion360
+            Cam.</p>
+        </article>
 
-        <div class="feature-copy">
-          <h3>Refined Illustration Set</h3>
-          <p>
-            The refined version improved the presentation of the mechanism and made
-            the motion concept easier to understand.
-          </p>
-        </div>
-      </article>
+
+
+
+
+      </div>
+    </section>
+
+    <!-- WHAT I LEARNED / IMPROVEMENTS -->
+    <section class="project-reflection-section">
+
+      <div class="reflection-wide-card">
+        <h2>What I Learned & Future Improvements</h2>
+
+        <p>
+          This project strengthened my ability to design for manufacturability while
+          balancing precision and practicality. I gained hands-on experience with
+          CNC machining workflows, including proper setup, toolpath planning, and
+          tolerancing for real components. Working through the full process—from CAD
+          to machining to assembly—highlighted how small design decisions directly
+          impact fabrication efficiency and final fit.
+
+      </div>
 
     </section>
 
-    <!-- VIDEO FEATURE ROW -->
-    <section class="project-feature-grid">
+    
 
-      <article class="feature-card">
-        <video controls muted playsinline preload="metadata">
-          <source src="images/trashcan/TrashCanAssemblyAngle.mp4" type="video/mp4">
-          Your browser does not support this video.
-        </video>
-
-        <div class="feature-copy">
-          <h3>Assembly Angle Motion</h3>
-          <p>
-            This animation helps visualize the assembly from an angled perspective
-            and shows how the concept reads in motion.
-          </p>
-        </div>
-      </article>
-
-      <article class="feature-card">
-        <video controls muted playsinline preload="metadata">
-          <source src="images/trashcan/TrashCanAssemblyside.mp4" type="video/mp4">
-          Your browser does not support this video.
-        </video>
-
-        <div class="feature-copy">
-          <h3>Side Motion View</h3>
-          <p>
-            The side motion clip focuses on mechanism travel and gives a clearer
-            view of the linkage movement through the motion path.
-          </p>
-        </div>
-      </article>
-
-    </section>
 
     <!-- BACK TO TOP -->
     <div class="back-to-top-wrapper">
       <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-        ↑ Back to Top
+        Back to Top
       </button>
     </div>
 
@@ -382,6 +345,17 @@
   </div>
 </section>
 
+  <div class="media-expand-modal" id="mediaExpandModal" aria-hidden="true">
+    <div class="media-expand-overlay"></div>
+
+    <div class="media-expand-dialog" role="dialog" aria-modal="true" aria-label="Expanded image view">
+      <button class="media-expand-close" id="mediaExpandClose" type="button"
+        aria-label="Close expanded image">×</button>
+      <img class="media-expand-image" id="mediaExpandImage" alt="Expanded project image">
+    </div>
+  </div>
+
   <script src="slider.js"></script>
+  <script src="expand-media.js"></script>
 </body>
 </html>
