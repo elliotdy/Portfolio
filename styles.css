@@ -775,7 +775,7 @@ body {
 
 .about-quick-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr; /* ONE column */
   gap: 24px;
   margin-bottom: 28px;
 }
@@ -839,11 +839,10 @@ body {
   max-height: 420px;
   object-fit: cover;
   display: block;
-  transition: transform 0.25s ease;
 }
 
 .about-photo-tile:hover img {
-  transform: scale(1.03);
+  transform: none;
 }
 
 .about-feature-row {
