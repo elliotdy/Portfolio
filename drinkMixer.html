@@ -51,22 +51,20 @@
     <section class="project-hero-card">
 
       <div class="project-hero-text">
-        <p class="project-kicker">Mechanical Design • CAD • Prototyping</p>
+        <p class="project-kicker">Cartesian Motion • Motor Control • Prototyping</p>
         <h1>Drink Mixer</h1>
 
         <p class="project-lead">
-          A compact drink-mixing prototype featuring a custom frame, slider,
-          spinner, claw, and cup-holding components. The project involved CAD,
-          subsystem design, prototyping, and final assembly of a functional mixer.
+          Automated drink mixer designed to pour and blend drinks with a 4.5 degree-of-freedom layout.
         </p>
 
         <div class="project-tags">
           <span>SolidWorks</span>
-          <span>Mechanical Design</span>
-          <span>3D Printing</span>
-          <span>Prototype Build</span>
-          <span>Assembly</span>
-          <span>Electronics</span>
+          <span>Circuit Motor Control</span>
+          <span>Ardurino</span>
+          <span>Prototyping</span>
+          <span>Degree-of-Freedom</span>
+          <span>Laser Cutting</span>
         </div>
       </div>
 
@@ -102,19 +100,17 @@
       <article class="project-info-card">
         <h2>Project Overview</h2>
         <p>
-          This project focused on designing and assembling a drink mixer with
-          a rigid frame, motion components, cup support geometry, and custom mounts.
-          The work included subsystem layout, individual part modeling, and prototype integration.
+          Automated drink-mixing prototype featuring a custom frame, slider, spinner, claw, and cup-holding mechanisms to position and dispense ingredients. The system provides 4.5 degrees of freedom with a claw end effector for controlled manipulation. Designed through CAD-based subsystem development, prototyping, and integration into a fully functional system.
         </p>
       </article>
 
       <article class="project-info-card">
         <h2>What I Worked On</h2>
         <ul class="project-bullet-list">
-          <li>Designed the frame, slider, spinner, and motor mount components</li>
-          <li>Created custom parts for mounting, support, and cup interaction</li>
-          <li>Developed the prototype layout and final assembled system</li>
-          <li>Integrated wiring and mechanical subsystems into one build</li>
+          <li>Designed the full assembly to allow 4.5 dof motion and sturctural support</li>
+          <li>Designed custom motor mounting, belt slider, and spinner components for 3D printing</li>
+          <li>Machined the structure and mechanisms for full prototype</li>
+          <li>Created proper circuit and Arduino code for button controlled steppr motor motion</li>
         </ul>
       </article>
 
@@ -148,15 +144,11 @@
         <!-- CENTER TEXT -->
         <div class="video-text-center">
           <p>
-            This section highlights the walking table mechanism in motion from multiple views.
-            By placing video on both sides, the central text explains how rotational input is
-            transferred through the linkage system to generate a stable walking gait.
+            This section shows the transition from prototype to a functional drink-mixing system, integrating mechanical motion and electronics.
           </p>
 
           <p>
-            The design was inspired by Strandbeest-style leg geometry, where each leg assembly
-            follows a repeatable path that helps maintain smooth forward motion. Watching the
-            system from both sides makes it easier to understand coordination and support.
+         Prototyping ensured all axes operated without interference and provided sufficient clearance for the cup. The final system demonstrates coordinated motion of the slider and end effector to position and dispense liquids into a complete working assembly.
           </p>
         </div>
 
@@ -184,8 +176,8 @@
     <!-- Four degrees of freedom -->
     <section class="project-process-section">
       <div class="section-heading-row">
-        <p class="section-kicker">Cartesian Motion</p>
-        <h2>Four Degrees of Freedom Design</h2>
+        <p class="section-kicker">Motion Design</p>
+        <h2>4.5 Degree-of-Freedom Design</h2>
       </div>
 
       <div class="process-grid">
@@ -213,16 +205,15 @@
             </div>
           </div>
 
-          <h3>Motor Mounts</h3>
+          <h3>Cartesian Motion</h3>
           <p>
-            Custom mount geometry was used to connect motor hardware to the frame
-            and guide components.
+            The aluminum extrusion frame provides X, Y, and Z motion, driven by a belt and motor system for controlled positioning.
           </p>
         </article>
 
         <article class="process-card">
           <div class="image-slider card-style-slider process-style-slider"
-            data-images="images/drinkMixer/CupHolderCAD.png, images/drinkMixer/OringCup.jpeg"
+            data-images="images/drinkMixer/CupHolderCAD.PNG, images/drinkMixer/OringCup.jpeg"
             data-alt="Slider subsystem images">
             <div class="slider-stage">
               <img class="slider-side-image slider-side-left">
@@ -243,10 +234,9 @@
             </div>
           </div>
 
-          <h3>Slider Mechanism</h3>
+          <h3>Bottle Holders</h3>
           <p>
-            The slider subsystem was modeled as a grouped set of related parts
-            for controlled linear motion.
+            Bottle holders were designed with tilt and clearance to ensure consistent placement and reliable alignment. An O-ring improves grip during pouring.
           </p>
         </article>
 
@@ -263,9 +253,8 @@
               </svg>
             </button>
           </div>
-          <h3>End Caps</h3>
-          <p>Circular aluminum stock was faced, bored, and drilled to create the end caps on the CNC Mill with Fusion360
-            Cam.</p>
+          <h3>Claw End Effector</h3>
+          <p>The claw provides 1.5 degrees of freedom for gripping and controlled rotation, enabling accurate pouring and release of bottles.</p>
         </article>
 
       </div>
@@ -274,7 +263,7 @@
     <!-- PROCESS -->
     <section class="project-process-section">
       <div class="section-heading-row">
-        <p class="section-kicker">Build Process</p>
+        <p class="section-kicker">Mechanical Design</p>
         <h2>Subsystem Highlights</h2>
       </div>
 
@@ -305,8 +294,7 @@
 
           <h3>Motor Mounts</h3>
           <p>
-            Custom mount geometry was used to connect motor hardware to the frame
-            and guide components.
+            Custom mounts connect motors to the frame while maintaining alignment and supporting load transfer.
           </p>
         </article>
 
@@ -335,8 +323,7 @@
 
           <h3>Slider Mechanism</h3>
           <p>
-            The slider subsystem was modeled as a grouped set of related parts
-            for controlled linear motion.
+            The slider moves along a belt-driven system, enabling controlled linear motion across the frame.
           </p>
         </article>
 
@@ -365,8 +352,7 @@
 
           <h3>Spinner Components</h3>
           <p>
-            These grouped CAD views show the rotating mixing mechanism and its
-            internal arrangement.
+            The spinner supports the opposite side of the motor, stabilizing the belt-driven system during motion.
           </p>
         </article>
 
@@ -376,8 +362,8 @@
 
     <!-- EXTRA DETAIL ROW -->
     <div class="section-heading-row">
-      <p class="section-kicker">Build Process</p>
-      <h2>Subsystem Highlights</h2>
+      <p class="section-kicker">Electronic Design</p>
+      <h2>Motor Circuit Highlights</h2>
     </div>
 
     <section class="project-feature-grid">
@@ -396,9 +382,8 @@
             </svg>
           </button>
         </div>
-        <h3>End Caps</h3>
-        <p>Circular aluminum stock was faced, bored, and drilled to create the end caps on the CNC Mill with Fusion360
-          Cam.</p>
+        <h3>Button Control</h3>
+        <p>Button inputs trigger preprogrammed drink sequences for controlled selection and dispensing.</p>
       </article>
 
       <article class="process-card">
@@ -414,9 +399,8 @@
             </svg>
           </button>
         </div>
-        <h3>End Caps</h3>
-        <p>Circular aluminum stock was faced, bored, and drilled to create the end caps on the CNC Mill with Fusion360
-          Cam.</p>
+        <h3>Arduino Circuit</h3>
+        <p>An Arduino Mega and motor drivers control five stepper motors and one servo for coordinated system motion.</p>
       </article>
 
     </section>
@@ -428,12 +412,9 @@
         <h2>What I Learned & Future Improvements</h2>
 
         <p>
-          This project strengthened my ability to design for manufacturability while
-          balancing precision and practicality. I gained hands-on experience with
-          CNC machining workflows, including proper setup, toolpath planning, and
-          tolerancing for real components. Working through the full process—from CAD
-          to machining to assembly—highlighted how small design decisions directly
-          impact fabrication efficiency and final fit.
+         This project improved my ability to control precise motor movements and coordinate multi-axis motion. One key challenge was maintaining structural stability with stacked axes and motor loads, where vibration limited performance and required reduced operating voltage.
+
+Moving forward, I would integrate a gearbox for increased torque and scale the system to expand functionality and improve overall performance.
 
       </div>
 
@@ -457,7 +438,7 @@
     </a>
 
     <a href="drinkMixerGallery.html" class="bottom-gallery-button">
-      Full Gallery
+      Photo Gallery
     </a>
 
     <a href="balancingCar.html" class="gallery-nav right">

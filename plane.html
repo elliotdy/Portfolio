@@ -51,38 +51,45 @@
     <section class="project-hero-card">
 
       <div class="project-hero-text">
-        <p class="project-kicker">Aircraft Design • Aerodynamics • CAD • Trade Studies</p>
+        <p class="project-kicker">Aircraft Design • Aerodynamics • Trade Studies</p>
         <h1>Twin Jet Airliner</h1>
 
         <p class="project-lead">
-          A full aircraft conceptual and preliminary design project for a new narrow-body twinjet
-          intended to compete with the Airbus A320neo and Boeing 737 MAX families. The design
-          process included concept screening, aerodynamic and propulsion trade studies, aircraft
-          sizing, matching-chart analysis, and CAD development of the final configuration.
+          Aircraft design project featuring full CAD modeling, structural drawings, and wing/stabilizer analysis.
         </p>
 
         <div class="project-tags">
+          <span>SolidWorks</span>
           <span>Aircraft Design</span>
           <span>Aerodynamics</span>
-          <span>Performance Analysis</span>
-          <span>Constraint Analysis</span>
-          <span>CAD Modeling</span>
-          <span>Trade Studies</span>
+          <span>Trade Study</span>
+          <span>Presentation</span>
+          
         </div>
       </div>
 
       <div class="project-hero-image">
-        <div
-          class="image-slider hero-style-slider"
-          data-images="images/plane/FinalSolidModel.PNG, images/plane/FullPlaneDraw.png, images/plane/ThreeViewTop.png, images/plane/ThreeViewSide.png, images/plane/ThreeViewFront.png"
-          data-alt="Twin jet airliner design images">
+        <div class="image-slider hero-style-slider"
+          data-images="images/plane/FinalSolidModel.PNG, images/plane/FullPlaneDraw.png"
+          data-alt="Balancing car project image">
           <div class="slider-stage">
             <img class="slider-side-image slider-side-left" alt="Previous image preview">
-            <img class="slider-main-image" alt="Main slider image">
+
+            <div class="slider-main-media"></div>
+
             <img class="slider-side-image slider-side-right" alt="Next image preview">
 
-            <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
-            <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
+            <button class="slider-arrow left" type="button" aria-label="Previous media">‹</button>
+            <button class="slider-arrow right" type="button" aria-label="Next media">›</button>
+
+            <button class="expand-media-button" aria-label="Expand media">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M4 9V4h5"></path>
+                <path d="M20 9V4h-5"></path>
+                <path d="M4 15v5h5"></path>
+                <path d="M20 15v5h-5"></path>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -93,26 +100,19 @@
     <section class="project-overview-grid">
 
       <article class="project-info-card">
-        <h2>Project Goal</h2>
+        <h2>Project Overview</h2>
         <p>
-          The objective was to design an all-new narrow-body twinjet that could compete in the same
-          market as the A320neo and 737 MAX, while targeting a 5–10% improvement in efficiency to
-          justify a new program. Early in the project, the team framed the design around the key
-          drivers of fuel burn per seat, reliability, development practicality, and long-term
-          profitability. Rather than just creating a visually plausible aircraft, the project was
-          treated as a system-level design problem where every major choice needed to support a
-          competitive business and performance case.
+         The objective was to design a new narrow-body twinjet competitive with the A320neo and 737 MAX, targeting a 5–10% efficiency improvement. The design focused on minimizing fuel burn per seat while maintaining reliability, practical development, and long-term profitability. The project was approached as a system-level problem, where each design decision supported overall performance and business viability.
         </p>
       </article>
 
       <article class="project-info-card">
-        <h2>How We Made Decisions</h2>
+        <h2>What I Worked On</h2>
         <ul class="project-bullet-list">
-          <li>Benchmarked the aircraft against the Airbus A320neo and Boeing 737 MAX families</li>
-          <li>Screened major concept directions before locking the final configuration</li>
+          <li>Benchmarked the aircraft against Boeing 737 MAX families</li>
           <li>Used aerodynamic and technology trade studies to identify the strongest efficiency drivers</li>
-          <li>Selected a design point from constraint analysis instead of choosing geometry arbitrarily</li>
-          <li>Refined the aircraft through successive preliminary design reviews and CAD development</li>
+          <li>Help calculate optimal drag bucket for airfoil selection </li>
+          <li>Created full CAD model in SolidWorks/li>
         </ul>
       </article>
 
@@ -122,50 +122,26 @@
     <section class="project-feature-grid">
 
       <article class="feature-card feature-wide">
-        <img src="images/plane/FullPlaneDraw.png" alt="Twin jet aircraft three-view and model layout">
+  <div class="expandable-media media-expand-wrapper">
+    <img src="images/plane/ThreeView.png" alt="Twin jet aircraft three-view and model layout" style="width: 100%; display: block;">
+    <button class="expand-media-button" aria-label="Expand image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+        <path d="M4 9V4h5"></path>
+        <path d="M20 9V4h-5"></path>
+        <path d="M4 15v5h5"></path>
+        <path d="M20 15v5h-5"></path>
+      </svg>
+    </button>
+  </div>
 
-        <div class="feature-copy">
-          <h3>Final Configuration</h3>
-          <p>
-            The final aircraft layout was the result of multiple design phases rather than a single
-            initial concept. As the project progressed, the aircraft was refined around a conventional
-            narrow-body twinjet architecture because that layout best matched the target cruise speed,
-            passenger count, operational practicality, and technology readiness required to challenge
-            existing single-aisle commercial aircraft.
-          </p>
-        </div>
-      </article>
-
-      <article class="feature-card">
-        <img src="images/plane/FuelBurnComparison.png" alt="Fuel burn comparison">
-
-        <div class="feature-copy">
-          <h3>Fuel Burn as a Primary Driver</h3>
-          <p>
-            Fuel burn per seat became one of the most important success metrics in the project. By the
-            later design stage, the project targeted a value better than the benchmark competitors,
-            and the final comparison slide shows the design reaching 147 lbf per seat against an
-            objective of 150, outperforming the listed A320neo, A321neo, and 737 MAX baselines.
-            This made fuel efficiency one of the clearest indicators that the design direction was
-            working and helped justify choices that favored aerodynamic efficiency and weight reduction.
-          </p>
-        </div>
-      </article>
-
-      <article class="feature-card">
-        <img src="images/plane/GrossWeightComparison.png" alt="Gross weight comparison">
-
-        <div class="feature-copy">
-          <h3>Weight as a Practical Surrogate for Cost</h3>
-          <p>
-            In the earlier phases, the team had not yet completed a detailed cost estimate, so gross
-            weight was used as a practical surrogate when comparing design competitiveness. A lighter
-            aircraft generally supports lower structural demands, lower fuel burn, and a stronger path
-            toward reduced operating cost. That made weight estimation more than a bookkeeping task —
-            it directly influenced whether the design could realistically compete with current aircraft.
-          </p>
-        </div>
-      </article>
+  <div class="feature-copy">
+    <h3>Final Configuration</h3>
+    <p>
+     The three-view layout was developed from trade studies across fuselage, wing structure, landing gear, empennage, flaps, and engine placement. These studies defined the final geometry by balancing aerodynamic performance, structural layout, and overall system integration.
+    </p>
+  </div>
+</article>
+      
 
     </section>
 
@@ -173,108 +149,40 @@
     <section class="project-process-section">
       <div class="section-heading-row">
         <p class="section-kicker">Design Logic</p>
-        <h2>How the Aircraft Was Chosen</h2>
+        <h2>Parameter Highlights</h2>
       </div>
 
       <div class="process-grid">
 
         <article class="process-card">
-          <img src="images/plane/MatchingChart.png" alt="Matching chart">
+          <div class="expandable-media media-expand-wrapper">
+            <img src="images/plane/GrossWeightComparison.png" alt="End cap components"
+              style="width:100%; display:block; border-radius:18px 18px 0 0;">
+            <button class="expand-media-button" aria-label="Expand image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M4 9V4h5"></path>
+                <path d="M20 9V4h-5"></path>
+                <path d="M4 15v5h5"></path>
+                <path d="M20 15v5h-5"></path>
+              </svg>
+            </button>
+          </div>
 
-          <h3>1. Constraint Analysis Set the Design Point</h3>
+          
+
+          <h3>Competitor, Threshold, Objective</h3>
           <p>
-            The matching chart was used to avoid choosing wing loading and thrust-to-weight ratio by
-            intuition alone. The final design point shown here was selected at approximately
-            W<sub>o</sub>/S = 115 lb/ft² and T<sub>o</sub>/W<sub>o</sub> = 0.40, balancing takeoff,
-            landing, climb, cruise, stall, and maneuver constraints in one location. This step was
-            critical because it linked the aircraft geometry to mission and certification-style
-            requirements instead of treating them as separate problems.
+            Benchmarked aircraft weight against competitors to define target design range and performance goals.
           </p>
+
+          
+          
         </article>
-
-        <article class="process-card">
-          <img src="images/plane/Airfoil.png" alt="Airfoil geometry">
-
-          <h3>2. Airfoil and Wing Choices Came from Trade Studies</h3>
-          <p>
-            The wing design process started by defining target lift coefficient range, transonic cruise
-            requirements, and aspect ratio goals. Several airfoil candidates were compared, including
-            NACA 64A410, NACA 65-410, and NACA 63(2)-415, before the project moved toward a final
-            configuration suited to the cruise and lift requirements. This was not just an aesthetic
-            decision — the wing had to support cruise efficiency, lift capability, and acceptable
-            stall behavior while remaining structurally realistic.
-          </p>
-        </article>
-
-        <article class="process-card">
-          <img src="images/plane/AirFoilPlots.png" alt="Airfoil performance plots">
-
-          <h3>3. Aerodynamics Was Identified as a Major Efficiency Lever</h3>
-          <p>
-            In the conceptual phase, aerodynamic improvement was selected as one of the strongest
-            directions to pursue because lift-to-drag ratio had a clear effect on weight and seat-mile
-            fuel burn. The team found that increasing aspect ratio could improve efficiency while still
-            staying within reasonable structural limits, making aerodynamic refinement much more valuable
-            than chasing speculative architecture changes that offered weak or uncertain benefit.
-          </p>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- DECISION SECTION -->
-    <section class="project-feature-grid">
-
-      <article class="feature-card">
-        <img src="images/plane/FullWingWithFlapper.png" alt="Wing and flap geometry">
-
-        <div class="feature-copy">
-          <h3>Why the Design Stayed Conventional</h3>
-          <p>
-            One of the most important parts of the project was deciding what <em>not</em> to pursue.
-            During conceptual design, the team examined hybrid-electric concepts, unducted engine ideas,
-            and changes related to Oswald’s factor. Hybrid propulsion was rejected because current
-            technology carried major weight, volume, and development penalties. Unducted propulsion was
-            also rejected because the target cruise Mach number pushed beyond the practical benefits of
-            that direction. Even Oswald-factor changes were set aside when they showed minimal payoff
-            compared with the aerodynamic and technology changes being considered. The final aircraft
-            therefore stayed with a more realistic commercial twinjet configuration that aligned with
-            market demand and near-term feasibility.
-          </p>
-        </div>
-      </article>
-
-      <article class="feature-card">
-        <img src="images/plane/ThreeViewTop.png" alt="Aircraft top view">
-
-        <div class="feature-copy">
-          <h3>Technology Was Chosen Where It Actually Mattered</h3>
-          <p>
-            Another major takeaway from the trade studies was that not all technology factors influenced
-            the design equally. The project found that material technology factor had the strongest
-            effect on gross weight and fuel burn, which made it a more useful design focus than changes
-            with weaker system-level payoff. That helped keep the design grounded: instead of adding
-            complexity for its own sake, the project emphasized the improvements that moved the aircraft
-            most in the desired direction.
-          </p>
-        </div>
-      </article>
-
-    </section>
-
-    <!-- CAD BREAKDOWN -->
-    <section class="project-process-section">
-      <div class="section-heading-row">
-        <p class="section-kicker">CAD Development</p>
-        <h2>Major Aircraft Components</h2>
-      </div>
-
-      <div class="process-grid">
 
         <article class="process-card">
           <div
             class="image-slider card-style-slider process-style-slider"
-            data-images="images/plane/FuselageDraw.png, images/plane/FinalSolidModel.PNG"
+            data-images="images/plane/Airfoil.png, images/plane/WingSectionView.png, images/plane/AirFoilPlots.png"
             data-alt="Fuselage images">
             <div class="slider-stage">
               <img class="slider-side-image slider-side-left" alt="Previous image preview">
@@ -283,22 +191,90 @@
 
               <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
               <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
+
+              <button class="expand-media-button" aria-label="Expand image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                  <path d="M4 9V4h5"></path>
+                  <path d="M20 9V4h-5"></path>
+                  <path d="M4 15v5h5"></path>
+                  <path d="M20 15v5h-5"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <h3>Airfoil</h3>
+          <p>
+           NACA 63(2)-415 was the selected airfoil based on target lift coefficients and transonic cruise performance requirements.
+          </p>
+        </article>
+
+        <article class="process-card">
+  <div class="expandable-media media-expand-wrapper">
+    <img src="images/plane/MatchingChart.png" alt="Matching chart"
+      style="width:100%; display:block; border-radius:18px 18px 0 0;">
+    <button class="expand-media-button" aria-label="Expand image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+        <path d="M4 9V4h5"></path>
+        <path d="M20 9V4h-5"></path>
+        <path d="M4 15v5h5"></path>
+        <path d="M20 15v5h-5"></path>
+      </svg>
+    </button>
+  </div>
+  <h3>Matching Chart</h3>
+  <p>
+    Used constraint analysis to determine optimal wing loading and thrust-to-weight ratio for design feasibility.
+  </p>
+</article>
+
+      </div>
+    </section>
+
+
+    <!-- CAD BREAKDOWN -->
+    <section class="project-process-section">
+      <div class="section-heading-row">
+        <p class="section-kicker">Aircraft Design</p>
+        <h2>Major Component Highlights</h2>
+      </div>
+
+      <div class="process-grid">
+
+        <article class="process-card">
+          <div
+            class="image-slider card-style-slider process-style-slider"
+            data-images=" images/plane/FusalageV44.PNG, images/plane/FuselageDraw.png"
+            data-alt="Fuselage images">
+            <div class="slider-stage">
+              <img class="slider-side-image slider-side-left" alt="Previous image preview">
+              <img class="slider-main-image" alt="Main slider image">
+              <img class="slider-side-image slider-side-right" alt="Next image preview">
+
+              <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
+              <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
+
+              <button class="expand-media-button" aria-label="Expand image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                  <path d="M4 9V4h5"></path>
+                  <path d="M20 9V4h-5"></path>
+                  <path d="M4 15v5h5"></path>
+                  <path d="M20 15v5h-5"></path>
+                </svg>
+              </button>
             </div>
           </div>
 
           <h3>Fuselage</h3>
           <p>
-            The fuselage sizing was driven by passenger accommodation, seat arrangement, aisle space,
-            and total volume requirements. The design targeted a fineness ratio comparable to existing
-            commercial aircraft so that the aircraft could carry the intended payload while remaining
-            aerodynamically reasonable.
+           Sized to meet passenger capacity and layout requirements while maintaining aerodynamic efficiency, using fineness ratio as a key design parameter.
           </p>
         </article>
 
         <article class="process-card">
           <div
             class="image-slider card-style-slider process-style-slider"
-            data-images="images/plane/WingSectionView.png, images/plane/FullWingWithFlapper.png, images/plane/FlapperDraw.png"
+            data-images="images/plane/FullWingWithFlapper.png,  images/plane/FlapperDraw.png"
             data-alt="Wing subsystem images">
             <div class="slider-stage">
               <img class="slider-side-image slider-side-left" alt="Previous image preview">
@@ -306,23 +282,29 @@
               <img class="slider-side-image slider-side-right" alt="Next image preview">
 
               <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
-              <button class="slider-arrow right" type="button" aria-label="Previous image">›</button>
+              <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
+
+              <button class="expand-media-button" aria-label="Expand image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                  <path d="M4 9V4h5"></path>
+                  <path d="M20 9V4h-5"></path>
+                  <path d="M4 15v5h5"></path>
+                  <path d="M20 15v5h-5"></path>
+                </svg>
+              </button>
             </div>
           </div>
 
-          <h3>Wing + High-Lift Geometry</h3>
+          <h3>Wing, High-Lift Geometry</h3>
           <p>
-            The wing was developed to support the aerodynamic goals identified in the trade studies,
-            while the sectional and flap-related geometry helped connect the cruise design to takeoff
-            and landing performance. This part of the project shows how the design moved from
-            numerical requirements into physical aircraft geometry.
+            Designed to meet cruise performance goals while enabling effective takeoff and landing through high-lift integration.
           </p>
         </article>
 
         <article class="process-card">
           <div
             class="image-slider card-style-slider process-style-slider"
-            data-images="images/plane/HorizontalStabilizerDraw.png, images/plane/VerticleStabalizerDraw.png, images/plane/VerticleStabilizerWithFlapper.png"
+            data-images="images/plane/VerticleStabilizerWithFlapper.png, images/plane/HorizontalStabilizerDraw.png, images/plane/VerticleStabalizerDraw.png"
             data-alt="Tail subsystem images">
             <div class="slider-stage">
               <img class="slider-side-image slider-side-left" alt="Previous image preview">
@@ -331,97 +313,50 @@
 
               <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
               <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
+
+              <button class="expand-media-button" aria-label="Expand image">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                  <path d="M4 9V4h5"></path>
+                  <path d="M20 9V4h-5"></path>
+                  <path d="M4 15v5h5"></path>
+                  <path d="M20 15v5h-5"></path>
+                </svg>
+              </button>
             </div>
           </div>
 
           <h3>Empennage</h3>
           <p>
-            The tail surfaces were sized to support the aircraft’s stability and control requirements.
-            This stage tied the geometry back to the aircraft-level static stability work and helped
-            ensure the final layout was not only efficient, but also controllable and balanced.
+           Sized to ensure stability and control, supporting a balanced and controllable aircraft design.
           </p>
         </article>
 
       </div>
     </section>
 
-    <!-- EXTRA FEATURE ROW -->
-    <section class="project-feature-grid">
+    
 
-      <article class="feature-card">
-        <img src="images/plane/LandingGearDraw.png" alt="Landing gear design">
+     <!-- WHAT I LEARNED / IMPROVEMENTS -->
+    <section class="project-reflection-section">
 
-        <div class="feature-copy">
-          <h3>Landing Gear Layout</h3>
-          <p>
-            Landing gear geometry was developed as part of the full aircraft configuration, supporting
-            ground stability, aircraft stance, and packaging within the final CAD layout. Even though
-            it is a smaller subsystem compared with the wing or fuselage, it is an important example
-            of how detailed design decisions had to fit within the larger aircraft architecture.
-          </p>
-        </div>
-      </article>
+      <div class="reflection-wide-card">
+        <h2>What I Learned & Future Improvements</h2>
 
-      <article class="feature-card">
-        <div
-          class="image-slider card-style-slider"
-          data-images="images/plane/ThreeViewFront.png, images/plane/ThreeViewSide.png, images/plane/ThreeViewTop.png"
-          data-alt="Three-view aircraft layout">
-          <div class="slider-stage">
-            <img class="slider-side-image slider-side-left" alt="Previous image preview">
-            <img class="slider-main-image" alt="Main slider image">
-            <img class="slider-side-image slider-side-right" alt="Next image preview">
+        <p>
+         This project improved my understanding of aircraft design as a system-level problem, where aerodynamic, structural, and performance decisions are closely connected. I gained experience using trade studies to guide design choices and balance efficiency, practicality, and performance.
 
-            <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
-            <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
-          </div>
-        </div>
+In the future, I want to explore more advanced aerodynamic analysis and refine the design with higher fidelity tools to better capture real-world performance.
 
-        <div class="feature-copy">
-          <h3>Final Three-View Development</h3>
-          <p>
-            These views show the aircraft as a complete integrated system. By this point, the project
-            had already passed through concept screening, performance sizing, aerodynamic trade studies,
-            and subsystem geometry development. The final three-view is valuable because it represents
-            the moment when all of those independent design choices had to coexist in one coherent
-            aircraft.
-          </p>
-        </div>
-      </article>
+      </div>
 
     </section>
 
-    <!-- SUMMARY -->
-    <section class="project-overview-grid">
 
-      <article class="project-info-card">
-        <h2>What This Project Demonstrates</h2>
-        <p>
-          This project demonstrates system-level aircraft design thinking: benchmarking against real
-          competitors, screening advanced concepts, identifying meaningful performance drivers,
-          selecting a design point from constraints, and carrying the design through into physical
-          geometry and CAD. The strongest part of the project is not any single figure or model,
-          but the fact that the final configuration was supported by a chain of engineering decisions.
-        </p>
-      </article>
-
-      <article class="project-info-card">
-        <h2>My Contribution Focus</h2>
-        <p>
-          On a portfolio page like this, the value is in showing both analysis and design judgment.
-          The project captures aerodynamic reasoning, trade-study logic, and aircraft configuration
-          development in a way that is much stronger than simply presenting a final render. It shows
-          the process of narrowing options, defending choices, and turning requirements into a working
-          aircraft concept.
-        </p>
-      </article>
-
-    </section>
 
     <!-- BACK TO TOP -->
     <div class="back-to-top-wrapper">
       <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-        ↑ Back to Top
+        Back to Top
       </button>
     </div>
 
@@ -436,7 +371,7 @@
     </a>
 
     <a href="planeGallery.html" class="bottom-gallery-button">
-      Full Gallery
+      Photo Gallery
     </a>
 
     <a href="sCO2Turbine.html" class="gallery-nav right">
@@ -489,6 +424,19 @@
 
   </div>
 </section>
+
+<div class="media-expand-modal" id="mediaExpandModal" aria-hidden="true">
+    <div class="media-expand-overlay"></div>
+
+    <div class="media-expand-dialog" role="dialog" aria-modal="true" aria-label="Expanded image view">
+      <button class="media-expand-close" id="mediaExpandClose" type="button"
+        aria-label="Close expanded image">×</button>
+      <img class="media-expand-image" id="mediaExpandImage" alt="Expanded project image">
+    </div>
+  </div>
+
+  <script src="slider.js"></script>
+  <script src="expand-media.js"></script>
 
 </body>
 </html>

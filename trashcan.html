@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Motorized Trash Can</title>
+  <title>Mechanism Trash Can</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="projectBody">
 
-   <!-- NAV -->
+  <!-- NAV -->
   <nav class="top-nav">
     <div class="nav-container">
       <div class="nav-left">
@@ -51,37 +51,33 @@
     <section class="project-hero-card">
 
       <div class="project-hero-text">
-        <p class="project-kicker">Mechanical Design • Linkage Design • CAD • Motion Study</p>
-        <h1>Motorized Trash Can</h1>
+        <p class="project-kicker">Mechanism Design • CAD • Motion Study</p>
+        <h1>Mechanism Trash Can</h1>
 
         <p class="project-lead">
-          A motorized trash can concept focused on linkage motion, assembly layout,
-          front and side configuration, and illustrated motion refinement. The project
-          combined CAD development with mechanism studies to better understand how
-          the opening system could be packaged and actuated.
+          Automated trash can mechanism designed to transfer waste from the top to the side while preventing spillage.
         </p>
 
         <div class="project-tags">
           <span>SolidWorks</span>
+          <span>Math Illustration</span>
           <span>Mechanism Design</span>
-          <span>Linkage Analysis</span>
-          <span>CAD Assembly</span>
-          <span>Motion Study</span>
-          <span>Concept Development</span>
+    
         </div>
       </div>
 
       <div class="project-hero-image expandable-media media-expand-wrapper">
-  <img src="images/trashcan/TrashCanAssembly.PNG" alt="Motorized trash can project image" style="width: 100%; border-radius: 18px; display: block;">
-  <button class="expand-media-button" aria-label="Expand image">
-    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-      <path d="M4 9V4h5"></path>
-      <path d="M20 9V4h-5"></path>
-      <path d="M4 15v5h5"></path>
-      <path d="M20 15v5h-5"></path>
-    </svg>
-  </button>
-</div>
+        <img src="images/trashcan/TrashCanAssembly.PNG" alt="Motorized trash can project image"
+          style="width: 100%; border-radius: 18px; display: block;">
+        <button class="expand-media-button" aria-label="Expand image">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+            <path d="M4 9V4h5"></path>
+            <path d="M20 9V4h-5"></path>
+            <path d="M4 15v5h5"></path>
+            <path d="M20 15v5h-5"></path>
+          </svg>
+        </button>
+      </div>
 
     </section>
 
@@ -90,21 +86,18 @@
 
       <article class="project-info-card">
         <h2>Project Overview</h2>
-        <p>
-          This project explored a motorized trash can system through CAD assembly,
-          mechanism layout, and linkage-based motion concepts. The work focused on
-          how the moving components interact, how the assembly is packaged, and how
-          the mechanism could be communicated through both geometry and illustrations.
-        </p>
+       <p>
+This project focused on designing a trash can mechanism to create controlled displacement motion. It involved CAD assembly, mechanism layout, and linkage-based motion design. The work emphasized how components interact and how motion can be clearly communicated through geometry and visuals.
+</p>
       </article>
 
       <article class="project-info-card">
         <h2>What I Worked On</h2>
         <ul class="project-bullet-list">
-          <li>Built assembly views showing the full trash can mechanism concept</li>
-          <li>Developed front and side linkage studies to understand motion paths</li>
-          <li>Created refined visual illustrations to better communicate the design</li>
-          <li>Used mechanism drawings and motion clips to compare concepts and geometry</li>
+<li>Designed a base mechanism to transfer motion between two positions</li>
+<li>Calculated linkage lengths to achieve perfect motion</li>
+<li>Recreated the mechanism in SolidWorks as a 3D model</li>
+<li>Validated motion through video analysis</li>
         </ul>
       </article>
 
@@ -118,11 +111,9 @@
       </video>
 
       <div class="feature-copy">
-        <h3>GD&T and SolidWorks</h3>
+        <h3>Single DOF Tray Transfer</h3>
         <p>
-          Every component in the full turbine assembly was designed for manufacturability and
-          performance or specified for intended purpose. Technical drawings help during machining with proper
-          dimensioning and tolerances.
+          The mechanism uses a one-degree-of-freedom linkage to transfer the tray from the top intake to the side opening. The motion path is designed to minimize tipping, allowing waste to be moved while maintaining containment and control.
         </p>
       </div>
 
@@ -131,8 +122,8 @@
     <!-- PROCESS -->
     <section class="project-process-section">
       <div class="section-heading-row">
-        <p class="section-kicker">Build Process</p>
-        <h2>Subsystem Highlights</h2>
+        <p class="section-kicker">Mechanism Design</p>
+        <h2>Calculation Highlights</h2>
       </div>
 
       <div class="process-grid">
@@ -150,9 +141,8 @@
               </svg>
             </button>
           </div>
-          <h3>End Caps</h3>
-          <p>Circular aluminum stock was faced, bored, and drilled to create the end caps on the CNC Mill with Fusion360
-            Cam.</p>
+          <h3>Rough Estimate</h3>
+          <p>Initial math illustrations were used to explore different linkage configurations and motion paths.</p>
         </article>
 
         <article class="process-card">
@@ -168,18 +158,17 @@
               </svg>
             </button>
           </div>
-          <h3>End Caps</h3>
-          <p>Circular aluminum stock was faced, bored, and drilled to create the end caps on the CNC Mill with Fusion360
-            Cam.</p>
+          <h3>Precise Design</h3>
+          <p>Linkage dimensions were calculated using defined start, end positions and their bisectors to achieve the desired motion path.</p>
         </article>
 
         <article class="process-card">
           <video controls muted autoplay loop>
             <source src="images/trashCan/TrashCanAssemblyside.mp4" type="video/mp4">
           </video>
-           <h3>Wire EDM</h3>
+          <h3>CAD Side View</h3>
           <p>
-            The aluminum enclosure was machined in the CNC Mill and serves as the static housing for the spinning rotor.
+            Side view validation confirmed no interference between components and proper start and end positioning.
           </p>
         </article>
 
@@ -189,15 +178,15 @@
     <!-- Electronics -->
     <section class="project-process-section">
       <div class="section-heading-row">
-        <p class="section-kicker">Electronic Design</p>
-        <h2>Wiring Highlights</h2>
+        <p class="section-kicker">Mechanical Design</p>
+        <h2>Assembly Highlights</h2>
       </div>
 
       <div class="process-grid process-grid-two">
 
         <article class="process-card">
           <div class="image-slider card-style-slider process-style-slider"
-            data-images="images/trashCan/TrashcanLinkageISO.png, images/trashCan/TrashcanLinkageFront.png,images/trashCan/TrashcanLinkageSide.png"
+            data-images="images/trashCan/TrashcanLinkageISO.PNG, images/trashCan/TrashcanLinkageFront.PNG,images/trashCan/TrashcanLinkageSide.PNG"
             data-alt="End cap components image">
             <div class="slider-stage">
               <img class="slider-side-image slider-side-left" alt="Previous image preview">
@@ -220,15 +209,15 @@
             </div>
           </div>
 
-          <h3>Enclosure</h3>
+          <h3>Linkage Stacking</h3>
           <p>
-            The aluminum enclosure was machined in the CNC Mill and serves as the static housing for the spinning rotor.
+            Linkages were arranged with proper spacing to prevent interference and ensure smooth, independent motion.
           </p>
         </article>
 
         <article class="process-card">
           <div class="expandable-media media-expand-wrapper">
-            <img src="images/trashCan/TrashCanFront.png" alt="End cap components"
+            <img src="images/trashCan/TrashCanFront.PNG" alt="End cap components"
               style="width:100%; display:block; border-radius:18px 18px 0 0;">
             <button class="expand-media-button" aria-label="Expand image">
               <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
@@ -239,9 +228,8 @@
               </svg>
             </button>
           </div>
-          <h3>End Caps</h3>
-          <p>Circular aluminum stock was faced, bored, and drilled to create the end caps on the CNC Mill with Fusion360
-            Cam.</p>
+          <h3>Full Trash Bin</h3>
+          <p>The full assembly integrates the linkage system within the enclosure, maintaining alignment and functional motion throughout operation.</p>
         </article>
 
 
@@ -258,18 +246,16 @@
         <h2>What I Learned & Future Improvements</h2>
 
         <p>
-          This project strengthened my ability to design for manufacturability while
-          balancing precision and practicality. I gained hands-on experience with
-          CNC machining workflows, including proper setup, toolpath planning, and
-          tolerancing for real components. Working through the full process—from CAD
-          to machining to assembly—highlighted how small design decisions directly
-          impact fabrication efficiency and final fit.
+         This project strengthened my understanding of how mechanisms can achieve complex motion in simple, efficient, and cost-effective ways compared to full robotic systems. It emphasized the value of creative linkage design to solve motion problems with minimal components.  
+
+In the future, I plan to further explore mechanism design to create more dynamic and interesting motion paths through creative configurations.
+</p>
 
       </div>
 
     </section>
 
-    
+
 
 
     <!-- BACK TO TOP -->
@@ -290,7 +276,7 @@
     </a>
 
     <a href="trashcanGallery.html" class="bottom-gallery-button">
-      Full Gallery
+      Photo Gallery
     </a>
 
     <a href="plane.html" class="gallery-nav right">
@@ -302,48 +288,44 @@
 
   <!-- CONTACT -->
   <section class="contact-section">
-  <div class="contact-container">
+    <div class="contact-container">
 
-    <div class="contact-left">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out for projects, collaboration, or opportunities.</p>
+      <div class="contact-left">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for projects, collaboration, or opportunities.</p>
 
-      <div class="contact-info">
-        <p><strong>Email:</strong> 
-          <a href="mailto:elliotady@gmail.com">elliotady@gmail.com</a>
-        </p>
+        <div class="contact-info">
+          <p><strong>Email:</strong>
+            <a href="mailto:elliotady@gmail.com">elliotady@gmail.com</a>
+          </p>
 
-        <p><strong>Phone:</strong> 
-          <a href="tel:18025574337">(802) 557-4337</a>
-        </p>
+          <p><strong>Phone:</strong>
+            <a href="tel:18025574337">(802) 557-4337</a>
+          </p>
 
-        <p><strong>LinkedIn:</strong> 
-          <a href="https://www.linkedin.com/in/elliotdy" target="_blank">
-            linkedin.com/in/elliotdy
-          </a>
-        </p>
+          <p><strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/elliotdy" target="_blank">
+              linkedin.com/in/elliotdy
+            </a>
+          </p>
+        </div>
       </div>
+
+      <form class="contact-form" action="https://formspree.io/f/xkopbwqj" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+        <!-- Optional but useful -->
+        <input type="hidden" name="_subject" value="Portfolio Contact Message">
+
+        <button type="submit">Send Message</button>
+      </form>
+
     </div>
-
-    <form 
-      class="contact-form"
-      action="https://formspree.io/f/xkopbwqj"
-      method="POST"
-    >
-      <input type="text" name="name" placeholder="Your Name" required>
-
-      <input type="email" name="email" placeholder="Your Email" required>
-
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-
-      <!-- Optional but useful -->
-      <input type="hidden" name="_subject" value="Portfolio Contact Message">
-
-      <button type="submit">Send Message</button>
-    </form>
-
-  </div>
-</section>
+  </section>
 
   <div class="media-expand-modal" id="mediaExpandModal" aria-hidden="true">
     <div class="media-expand-overlay"></div>
@@ -358,4 +340,5 @@
   <script src="slider.js"></script>
   <script src="expand-media.js"></script>
 </body>
+
 </html>

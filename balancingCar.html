@@ -51,23 +51,19 @@
     <section class="project-hero-card">
 
       <div class="project-hero-text">
-        <p class="project-kicker">Mechanical Design • CAD • Prototyping • Testing</p>
+        <p class="project-kicker">Analysis • Prototyping • Testing</p>
         <h1>Balancing Car</h1>
 
         <p class="project-lead">
-          A self-balancing motor wheel control project focused on chassis layout,
-          wheel design, support components, hardware integration, physical prototyping,
-          and real-world testing. This project combined CAD development with hands-on
-          assembly and performance evaluation.
+          Motorized wheel control project focused on acceleration control to balance a one foot aluminum extrusion.
         </p>
 
         <div class="project-tags">
           <span>SolidWorks</span>
-          <span>Mechanical Design</span>
-          <span>Prototyping</span>
-          <span>Testing</span>
-          <span>Assembly</span>
-          <span>Motor Control</span>
+          <span>Motion Study</span>
+          <span>3D Printing</span>
+          <span>Arduino</span>
+          <span>Laser Cutting</span>
         </div>
       </div>
 
@@ -105,20 +101,18 @@
       <article class="project-info-card">
         <h2>Project Overview</h2>
         <p>
-          This project centered on a compact balancing car platform with custom
-          wheel geometry, support parts, and a lightweight frame arrangement.
-          The work involved CAD modeling, component iteration, physical assembly,
-          and testing of the drive system and overall vehicle behavior.
+          This project focused on designing a balancing car platform with custom wheel geometry to support a one-foot aluminum extrusion. Motion analysis was used to optimize load capacity and stability, followed by physical assembly and testing of the drive system.
+
+The final system was evaluated on its ability to travel a set distance as quickly and reliably as possible, balancing speed, stability, and structural performance.
         </p>
       </article>
 
       <article class="project-info-card">
         <h2>What I Worked On</h2>
         <ul class="project-bullet-list">
-          <li>Modeled the car frame, wheels, spacer, and axle mount components</li>
-          <li>Created top, front, and assembled CAD views to refine layout and fit</li>
-          <li>Built and tested the physical prototype to evaluate motion and control</li>
-          <li>Compared the CAD concept to real fabrication and final assembly</li>
+          <li>Determined optinized wheel size based on motor speed and analyized max acceleration extrusion could balance with</li>
+          <li>Laser cut and 3D printed parts for efficient wheel motion</li>
+          <li>Generated code for car to accerlerate and decelerate to an exact diatance</li>
         </ul>
       </article>
 
@@ -132,11 +126,11 @@
       </video>
 
       <div class="feature-copy">
-        <h3>GD&T and SolidWorks</h3>
+        <h3>Distance Test</h3>
         <p>
-          Every component in the full turbine assembly was designed for manufacturability and
-          performance or specified for intended purpose. Technical drawings help during machining with proper
-          dimensioning and tolerances.
+          The system was tested to evaluate distance control and stability under acceleration and deceleration. The car was able to travel close to the target distance consistently while maintaining balance of the vertical extrusion.
+
+Controlled acceleration and deceleration profiles prevented tipping, demonstrating reliable motion control and stable system performance.
         </p>
       </div>
 
@@ -176,18 +170,14 @@
 
         <!-- RIGHT: TEXT -->
         <div class="media-stack-right">
-          <h2>From CAD to Physical System</h2>
+          <h2>Acceleration Motion Analysis</h2>
 
           <p>
-            This stage of the project focused on translating the digital design into a
-            functional physical system. Each component had to be designed with both
-            motion constraints and manufacturability in mind.
+            This stage focused on determining the maximum allowable acceleration while maintaining system stability. Acceleration was increased until the reaction force at the back of the extrusion approached zero, defining the tipping threshold.
           </p>
 
           <p>
-            The interaction between parts was critical, especially in maintaining smooth
-            linkage motion and ensuring structural stability. Iterating between CAD and
-            physical assembly helped refine tolerances and improve overall performance.
+           This relationship between acceleration and reaction force established a safe operating limit for motion. The final acceleration profile was selected to remain below this threshold, ensuring stable movement without compromising speed or performance.
           </p>
         </div>
 
@@ -198,8 +188,8 @@
     <!-- PROCESS -->
     <section class="project-process-section">
       <div class="section-heading-row">
-        <p class="section-kicker">Build Process</p>
-        <h2>Subsystem Highlights</h2>
+        <p class="section-kicker">Mechanical Design</p>
+        <h2>Component Highlights</h2>
       </div>
 
       <div class="process-grid">
@@ -229,10 +219,9 @@
             </div>
           </div>
 
-          <h3>Wheel Development</h3>
+          <h3>Wheel </h3>
           <p>
-            The wheel design progressed through both CAD and physical mockups,
-            focusing on shape, manufacturability, and function.
+            The wheel design diameter was determined based on the max motor speed to reach desired max acceleration.
           </p>
         </article>
 
@@ -249,9 +238,8 @@
               </svg>
             </button>
           </div>
-          <h3>End Caps</h3>
-          <p>Circular aluminum stock was faced, bored, and drilled to create the end caps on the CNC Mill with Fusion360
-            Cam.</p>
+          <h3>Axle Support</h3>
+          <p>Custom supports were designed to mount the axle and integrate the wheel system with the platform structure.</p>
         </article>
 
         <article class="process-card">
@@ -267,9 +255,8 @@
               </svg>
             </button>
           </div>
-          <h3>End Caps</h3>
-          <p>Circular aluminum stock was faced, bored, and drilled to create the end caps on the CNC Mill with Fusion360
-            Cam.</p>
+          <h3>Spacers</h3>
+          <p>Spacers were used to reduce contact and friction between rotating components, improving alignment and motion efficiency.</p>
         </article>
 
       </div>
@@ -279,8 +266,8 @@
     <!-- Buuld -->
     <section class="project-process-section">
       <div class="section-heading-row">
-        <p class="section-kicker">Electronic Design</p>
-        <h2>Wiring Highlights</h2>
+        <p class="section-kicker">Assebmbly Design</p>
+        <h2>System Highlights</h2>
       </div>
 
       <div class="process-grid process-grid-two">
@@ -310,15 +297,15 @@
             </div>
           </div>
 
-          <h3>Enclosure</h3>
+          <h3>Final Build</h3>
           <p>
-            The aluminum enclosure was machined in the CNC Mill and serves as the static housing for the spinning rotor.
+            The integrated system combined motor control, structural components, and electronics into a compact platform for controlled motion and testing.
           </p>
         </article>
 
         <article class="process-card">
           <div class="image-slider card-style-slider process-style-slider"
-            data-images="images/balancingCar/Cartop.png, images/balancingCar/Carfront.png"
+            data-images="images/balancingCar/Cartop.PNG, images/balancingCar/Carfront.PNG"
             data-alt="End cap components image">
             <div class="slider-stage">
               <img class="slider-side-image slider-side-left" alt="Previous image preview">
@@ -341,9 +328,9 @@
             </div>
           </div>
 
-          <h3>Enclosure</h3>
+          <h3>Original CAD</h3>
           <p>
-            The aluminum enclosure was machined in the CNC Mill and serves as the static housing for the spinning rotor.
+            The final build evolved from the initial CAD design, with modifications particularly in the wheels to improve performance from redesign.
           </p>
         </article>
 
@@ -361,12 +348,9 @@
         <h2>What I Learned & Future Improvements</h2>
 
         <p>
-          This project strengthened my ability to design for manufacturability while
-          balancing precision and practicality. I gained hands-on experience with
-          CNC machining workflows, including proper setup, toolpath planning, and
-          tolerancing for real components. Working through the full process—from CAD
-          to machining to assembly—highlighted how small design decisions directly
-          impact fabrication efficiency and final fit.
+      This project strengthened my understanding of how acceleration directly affects force in a real, hands-on system. Testing and iteration helped connect theoretical motion analysis to physical performance and system stability.
+
+A key improvement would be integrating a buck-boost converter to maintain consistent voltage and improve motor performance. Additionally, I would enhance the aesthetics through a more creative enclosure and refined wheel design to better integrate the system visually.
 
       </div>
 
@@ -390,7 +374,7 @@
     </a>
 
     <a href="balancingCarGallery.html" class="bottom-gallery-button">
-      Full Gallery
+      Photo Gallery
     </a>
 
     <a href="trashcan.html" class="gallery-nav right">

@@ -56,15 +56,16 @@
         <h1>Walking Table</h1>
 
         <p class="project-lead">
-          A Strandbeest-inspired walking table that converts rotational motion into a smooth walking gait using
-          multi-link mechanisms.
+         Passion project, Strandbeest-inspired walking table using linkage-based legs to generate smooth, stable motion, with integrated motors.
         </p>
 
         <div class="project-tags">
           <span>Mechanisms</span>
-          <span>Linkage Design</span>
-          <span>CAD</span>
-          <span>Prototyping</span>
+          <span>SolidWorks</span>
+          <span>3D Printing</span>
+          <span>Arduino</span>
+          <span>Circuits</span>
+          <span>Design for Assembly</span>
         </div>
       </div>
 
@@ -105,19 +106,19 @@
       <article class="project-info-card">
         <h2>Project Overview</h2>
         <p>
-          This project focused on the design and manufacture of a small turbine-generator
-          enclosure with multiple precision-machined aluminum parts. The work involved CAD
-          design, machining strategy, part setup, and final fit-up of the enclosure and end cap components.
+          Strandbeest-inspired walking table using multi-linkage legs for smooth, stable motion. Driven by a tank-style motor system for controlled movement and steering.
+
+All components were 3D printed, with bearings and fasteners enabling low-friction linkage motion. The system is controlled via a Bluetooth joystick for real-time operation
         </p>
       </article>
 
       <article class="project-info-card">
         <h2>What I Worked On</h2>
         <ul class="project-bullet-list">
-          <li>Machined enclosure body and circular end cap components</li>
-          <li>Prepared setups for large round stock and square stock</li>
-          <li>Integrated bolt patterns, internal pockets, and sealing surfaces</li>
-          <li>Documented fabrication progress with machining and assembly photos</li>
+          <li>Designed leg components, enclosure plates, and multi-linkage connectors in SolidWorks for 3D printing.</li>
+<li>Specified mechanical and electrical components for structure, motion, and voltage requirements.</li>
+<li>Built the circuit for a dual-motor system with battery power and wireless control.</li>
+<li>Developed Arduino code for forward, reverse, and stearing.</li>
         </ul>
       </article>
 
@@ -154,7 +155,7 @@
 
         <!-- RIGHT: TEXT -->
         <div class="media-stack-right">
-          <h2>From CAD to Physical System</h2>
+          <h2>From CAD to Build</h2>
 
           <p>
             This stage of the project focused on translating the digital design into a
@@ -205,9 +206,9 @@
             </div>
           </div>
 
-          <h3>Enclosure</h3>
+          <h3>Parts</h3>
           <p>
-            The aluminum enclosure was machined in the CNC Mill and serves as the static housing for the spinning rotor.
+            Components were selected for structural strength and smooth rotation, using fasteners with bearings. Threaded inserts were used for reliable assembly in 3D printed parts.
           </p>
         </article>
 
@@ -234,10 +235,9 @@
             </div>
           </div>
 
-          <h3>End Caps</h3>
+          <h3>Leg linkages</h3>
           <p>
-            Circular aluminum stock was faced, bored, and drilled to create the end caps on the CNC Mill with Fusion360
-            Cam.
+            The linkage system converts circular cranker input into smooth, stable walking motion through a multi-link mechanism.
           </p>
         </article>
 
@@ -264,10 +264,9 @@
             </div>
           </div>
 
-          <h3>Rotor</h3>
+          <h3>Enclosure</h3>
           <p>
-            The steel rotor was first cut with precision in the wire EDM to optimize concentricity and cut square key
-            hole. The rotor was then faced in the CNC mill.
+            The enclosure and plates form the structural frame, supporting the linkage system and maintaining alignment during motion.
           </p>
         </article>
 
@@ -310,9 +309,9 @@
             </div>
           </div>
 
-          <h3>Enclosure</h3>
+          <h3>Wire Prototype</h3>
           <p>
-            The aluminum enclosure was machined in the CNC Mill and serves as the static housing for the spinning rotor.
+            A lithium battery powers the motors through a driver and buck-boost converter, while a separate 9V supply powers the Arduino Nano and joystick controller.
           </p>
         </article>
 
@@ -329,9 +328,8 @@
               </svg>
             </button>
           </div>
-          <h3>End Caps</h3>
-          <p>Circular aluminum stock was faced, bored, and drilled to create the end caps on the CNC Mill with Fusion360
-            Cam.</p>
+          <h3>Enclosed Electronics</h3>
+          <p>The circuit was soldered and integrated into the enclosure for protection, organization, and reliable operation. </p>
         </article>
 
 
@@ -349,13 +347,13 @@
 
         <!-- FULL WIDTH TITLE -->
         <div class="video-text-header">
-          <h2>Walking Motion in Action</h2>
+          <h2>Linkage Motion in Action</h2>
         </div>
 
         <!-- LEFT VIDEO -->
         <div class="video-text-side expandable-media media-expand-wrapper">
           <video muted autoplay loop playsinline>
-            <source src="images/walkingTable/TwoLegVideo.mov" type="video/mp4">
+            <source src="images/walkingTable/TwoLegVideo.mp4" type="video/mp4">
           </video>
           <button class="expand-media-button" aria-label="Expand video">
             <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
@@ -370,15 +368,11 @@
         <!-- CENTER TEXT -->
         <div class="video-text-center">
           <p>
-            This section highlights the walking table mechanism in motion from multiple views.
-            By placing video on both sides, the central text explains how rotational input is
-            transferred through the linkage system to generate a stable walking gait.
+            This section shows the walking mechanism in both the physical build and CAD, illustrating how rotational input is transferred through the linkage system to produce walking stability.
           </p>
 
           <p>
-            The design was inspired by Strandbeest-style leg geometry, where each leg assembly
-            follows a repeatable path that helps maintain smooth forward motion. Watching the
-            system from both sides makes it easier to understand coordination and support.
+           The design is based on Strandbeest-inspired geometry, where each leg follows a repeatable path to maintain smooth forward motion. Three legs on each side allows continous ground contact.
           </p>
         </div>
 
@@ -408,12 +402,9 @@
         <h2>What I Learned & Future Improvements</h2>
 
         <p>
-          This project strengthened my ability to design for manufacturability while
-          balancing precision and practicality. I gained hands-on experience with
-          CNC machining workflows, including proper setup, toolpath planning, and
-          tolerancing for real components. Working through the full process—from CAD
-          to machining to assembly—highlighted how small design decisions directly
-          impact fabrication efficiency and final fit.
+          This project improved my ability to plan a system starting from electronics and integrate supporting mechanical components. I refined linkage design and learned how print orientation and layer direction impact strength in 3D printed parts.
+
+Moving forward, I would focus more on cost-driven design. The system included over 570 parts, highlighting the importance of budgeting and part count reduction.
 
       </div>
 
@@ -437,7 +428,7 @@
     </a>
 
     <a href="WalkingTableGallery.html" class="bottom-gallery-button">
-      Full Gallery
+      Photo Gallery
     </a>
 
     <a href="drinkMixer.html" class="gallery-nav right">

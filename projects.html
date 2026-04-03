@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Projects</title>
-    <link href="styles.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body class="projectBody">
 
-    <!-- NAV -->
+  <!-- NAV -->
   <nav class="top-nav">
     <div class="nav-container">
       <div class="nav-left">
@@ -43,192 +44,196 @@
     </div>
   </nav>
 
-
-    <section class="ProjectPage" id="projectPage">
-        <div class="projects-header">
-            <h1>Projects</h1>
-            <p>
-                A selection of mechanical design, prototyping, controls, and product development work.
-            </p>
-        </div>
-
-        <section class="gallery">
-
-            <a href="sCO2Turbine.html" class="project-card-link">
-                <article class="project-card">
-                    <img src="images/sCO2Turbine/FullTurbineAssemIso.PNG" alt="Supercritical CO2 Turbine Generator">
-                    <div class="project-card-content">
-                        <h3>Supercritical CO2 Turbine Generator</h3>
-                        <p class="project-summary">
-                            Compact turbine-generator concept designed for a supercritical CO2 Rankine cycle system.
-                        </p>
-                        <ul class="skill-list">
-                            <li>SolidWorks</li>
-                            <li>GD&T</li>
-                            <li>CNC Mill</li>
-                            <li>CNC Lathe</li>
-                            <li>Wire EDM</li>
-                        </ul>
-                    </div>
-                </article>
-            </a>
-
-            <a href="WalkingTable.html" class="project-card-link">
-                <article class="project-card">
-                    <img src="images/walkingTable/StrandbeestTableFinalPhoto1.PNG" alt="Walking Table">
-                    <div class="project-card-content">
-                        <h3>Walking Table</h3>
-                        <p class="project-summary">
-                            Strandbeest-inspired table using linkage-based walking motion and structural integration.
-                        </p>
-                        <ul class="skill-list">
-                            <li>Mechanisms</li>
-                            <li>CAD</li>
-                            <li>Fabrication</li>
-                            <li>Design for Assembly</li>
-                        </ul>
-                    </div>
-                </article>
-            </a>
-
-            <a href="drinkMixer.html" class="project-card-link">
-                <article class="project-card">
-                    <img src="images/drinkMixer/DrinkMixerHero.PNG" alt="Drink Mixer">
-                    <div class="project-card-content">
-                        <h3>Drink Mixer</h3>
-                        <p class="project-summary">
-                            Automated drink mixer designed to dispense and blend drinks with a compact electromechanical
-                            layout.
-                        </p>
-                        <ul class="skill-list">
-                            <li>Electromechanical Design</li>
-                            <li>Arduino</li>
-                            <li>Manufacturing</li>
-                            <li>Product Design</li>
-                        </ul>
-                    </div>
-                </article>
-            </a>
-
-            <a href="balancingCar.html" class="project-card-link">
-                <article class="project-card">
-                    <img src="images/balancingCar/CarAssembly.PNG" alt="Motor Wheel Control">
-                    <div class="project-card-content">
-                        <h3>Motor Wheel Control</h3>
-                        <p class="project-summary">
-                            Motorized wheel control project focused on motion control, driveline behavior, and system
-                            testing.
-                        </p>
-                        <ul class="skill-list">
-                            <li>Controls</li>
-                            <li>Motors</li>
-                            <li>Embedded Systems</li>
-                            <li>Testing</li>
-                        </ul>
-                    </div>
-                </article>
-            </a>
-
-            <a href="trashcan.html" class="project-card-link hidden-project">
-                <article class="project-card">
-                    <img src="images/trashCan/TrashCanAssembly.PNG" alt="Motorized Trash Can">
-                    <div class="project-card-content">
-                        <h3>Motorized Trash Can</h3>
-                        <p class="project-summary">
-                            Automated trash can concept with integrated motion system and mechanical packaging
-                            constraints.
-                        </p>
-                        <ul class="skill-list">
-                            <li>CAD Assembly</li>
-                            <li>Mechanism Design</li>
-                            <li>Prototyping</li>
-                            <li>Integration</li>
-                        </ul>
-                    </div>
-                </article>
-            </a>
-
-            <a href="plane.html" class="project-card-link hidden-project">
-                <article class="project-card">
-                    <img src="images/plane/FinalSolidModel.PNG" alt="Twin Jet Airliner">
-                    <div class="project-card-content">
-                        <h3>Twin Jet Airliner</h3>
-                        <p class="project-summary">
-                            Aircraft design project featuring full CAD modeling, structural drawings, and wing/stabilizer analysis.
-                        </p>
-                        <ul class="skill-list">
-                            <li>SolidWorks</li>
-                            <li>Aircraft Design</li>
-                            <li>GD&T Drawings</li>
-                            <li>CAD Assembly</li>
-                        </ul>
-                    </div>
-                </article>
-            </a>
-
-        </section>
-
-        <div class="projects-actions">
-            <button class="more-button" id="moreButton" type="button">More</button>
-        </div>
-    </section>
-
-    
-
-    <script>
-        const moreButton = document.getElementById("moreButton");
-        const hiddenProjects = document.querySelectorAll(".hidden-project");
-        const projectPage = document.getElementById("projectPage");
-
-        moreButton.addEventListener("click", () => {
-            const isExpanded = projectPage.classList.toggle("expanded");
-
-            hiddenProjects.forEach(project => {
-                project.classList.toggle("show-project", isExpanded);
-            });
-
-            moreButton.textContent = isExpanded ? "Less" : "More";
-        });
-    </script>
-
-
-
-
-
-  <section class="contact-section">
-  <div class="contact-container">
-
-    <div class="contact-left">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out for projects, collaboration, or opportunities.</p>
-
-      <div class="contact-info">
-        <p><strong>Email:</strong> 
-          <a href="/cdn-cgi/l/email-protection#7e1b121217110a1f1a073e19131f1712501d1113"><span class="__cf_email__" data-cfemail="62070e0e0b0d1603061b22050f030b0e4c010d0f">[email&#160;protected]</span></a>
-        </p>
-
-        <p><strong>Phone:</strong> 
-          <a href="tel:18025574337">(802) 557-4337</a>
-        </p>
-
-        <p><strong>LinkedIn:</strong> 
-          <a href="https://www.linkedin.com/in/elliotdy" target="_blank">
-            linkedin.com/in/elliotdy
-          </a>
-        </p>
-      </div>
+  <!-- PROJECTS -->
+  <section class="ProjectPage" id="projectPage">
+    <div class="projects-header">
+      <h1>Projects</h1>
+      <p>
+        A selection of mechanical design, prototyping, controls, and product development work.
+      </p>
     </div>
 
-    <form 
-      class="contact-form"
-      action="https://formspree.io/f/xkopbwqj"
-      method="POST"
-    >
-      <input type="text" name="name" placeholder="Your Name" required>
+    <section class="gallery">
 
-      <input type="email" name="email" placeholder="Your Email" required>
+      <a href="sCO2Turbine.html" class="project-card-link">
+        <article class="project-card">
+          <img src="images/sCO2Turbine/FullTurbineAssemIso.PNG" alt="Supercritical CO2 Turbine Generator">
+          <div class="project-card-content">
+            <h3>Supercritical CO2 Turbine Generator</h3>
+            <p class="project-summary">
+              Turbine-generator designed for a supercritical CO2 working fluid in Rankine cycle system.
+            </p>
+            <ul class="skill-list">
+              <li>SolidWorks</li>
+              <li>GD&amp;T</li>
+              <li>DFM</li>
+              <li>CNC Mill</li>
+              <li>CNC Lathe</li>
+              <li>Wire EDM</li>
+              <li>Fusion360 CAM</li>
+            </ul>
+          </div>
+        </article>
+      </a>
 
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <a href="WalkingTable.html" class="project-card-link">
+        <article class="project-card">
+          <img src="images/walkingTable/StrandbeestTableFinalPhoto1.PNG" alt="Walking Table">
+          <div class="project-card-content">
+            <h3>Walking Table</h3>
+            <p class="project-summary">
+              Strandbeest-inspired walking table using linkage-based legs with tank style motor integration.
+            </p>
+            <ul class="skill-list">
+              <li>Mechanisms</li>
+              <li>SolidWorks</li>
+              <li>3D Printing</li>
+              <li>Arduino</li>
+              <li>Circuits</li>
+              <li>Design for Assembly</li>
+            </ul>
+          </div>
+        </article>
+      </a>
 
-      <!-- Optional but useful -->
-      <input type="hidden" name="_subject" value
+      <a href="drinkMixer.html" class="project-card-link">
+        <article class="project-card">
+          <img src="images/drinkMixer/DrinkMixerHero.PNG" alt="Drink Mixer">
+          <div class="project-card-content">
+            <h3>Drink Mixer</h3>
+            <p class="project-summary">
+              Automated drink mixer designed to pour and blend drinks with a 4.5 degree-of-freedom layout.
+            </p>
+            <ul class="skill-list">
+              <li>SolidWorks</li>
+              <li>Circuit Motor Control</li>
+              <li>Arduino</li>
+              <li>Prototyping</li>
+              <li>Degree-of-Freedom</li>
+              <li>Laser Cutting</li>
+            </ul>
+          </div>
+        </article>
+      </a>
+
+      <a href="balancingCar.html" class="project-card-link">
+        <article class="project-card">
+          <img src="images/balancingCar/CarAssembly.PNG" alt="Balancing Car">
+          <div class="project-card-content">
+            <h3>Balancing Car</h3>
+            <p class="project-summary">
+              Motorized wheel control project focused on acceleration control to balance a one foot aluminum extrusion.
+            </p>
+            <ul class="skill-list">
+              <li>SolidWorks</li>
+              <li>Motion Study</li>
+              <li>3D Printing</li>
+              <li>Arduino</li>
+              <li>Laser Cutting</li>
+            </ul>
+          </div>
+        </article>
+      </a>
+
+      <a href="trashcan.html" class="project-card-link hidden-project">
+        <article class="project-card">
+          <img src="images/trashCan/TrashCanAssembly.PNG" alt="Motorized Trash Can">
+          <div class="project-card-content">
+            <h3>Mechanism Trash Can</h3>
+            <p class="project-summary">
+              Automated trash can mechanism designed to transfer waste from the top to the side while preventing spillage.
+            </p>
+            <ul class="skill-list">
+              <li>SolidWorks</li>
+              <li>Math Illustration</li>
+              <li>Mechanism Design</li>
+            </ul>
+          </div>
+        </article>
+      </a>
+
+      <a href="plane.html" class="project-card-link hidden-project">
+        <article class="project-card">
+          <img src="images/plane/FinalSolidModel.PNG" alt="Twin Jet Airliner">
+          <div class="project-card-content">
+            <h3>Twin Jet Airliner</h3>
+            <p class="project-summary">
+              Aircraft design project featuring full CAD modeling, structural drawings, and wing/stabilizer analysis.
+            </p>
+            <ul class="skill-list">
+              <li>SolidWorks</li>
+              <li>Aircraft Design</li>
+              <li>Aerodynamics</li>
+              <li>Trade Study</li>
+              <li>Presentation</li>
+            </ul>
+          </div>
+        </article>
+      </a>
+
+    </section>
+
+    <div class="projects-actions">
+      <button class="more-button" id="moreButton" type="button">More</button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section">
+    <div class="contact-container">
+
+      <div class="contact-left">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for projects, collaboration, or opportunities.</p>
+
+        <div class="contact-info">
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:elliotady@gmail.com">elliotady@gmail.com</a>
+          </p>
+
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:18025574337">(802) 557-4337</a>
+          </p>
+
+          <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/elliotdy" target="_blank" rel="noopener noreferrer">
+              linkedin.com/in/elliotdy
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/xkopbwqj" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <input type="hidden" name="_subject" value="Portfolio Contact Message">
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+  </section>
+
+  <script>
+    const moreButton = document.getElementById("moreButton");
+    const hiddenProjects = document.querySelectorAll(".hidden-project");
+    const projectPage = document.getElementById("projectPage");
+
+    if (moreButton && projectPage && hiddenProjects.length > 0) {
+      moreButton.addEventListener("click", () => {
+        const isExpanded = projectPage.classList.toggle("expanded");
+
+        hiddenProjects.forEach((project) => {
+          project.classList.toggle("show-project", isExpanded);
+        });
+
+        moreButton.textContent = isExpanded ? "Less" : "More";
+      });
+    }
+  </script>
+
+</body>
+</html>

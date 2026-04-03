@@ -9,7 +9,7 @@
 
 <body class="projectBody">
 
-   <!-- NAV -->
+  <!-- NAV -->
   <nav class="top-nav">
     <div class="nav-container">
       <div class="nav-left">
@@ -55,10 +55,8 @@
         <h1>Unsteady Fluid Mechanics and Acoustics Laboratory</h1>
 
         <p class="project-lead">
-          My work in UFMAL spans both research and outreach. On the research side, I contributed to
-          an AIAA publication on quadrotor performance and noise prediction using CHARM and PSU-WOPWOP.
-          On the outreach side, I helped support the NASA ULI UAM workshop in Daytona and helped lead
-          the Tello drone portion for students.
+          I contributed to an AIAA publication on quadrotor performance and noise prediction using CHARM and PSU-WOPWOP
+          for UAM. I also supported the NASA ULI UAM workshop in Daytona and led the Tello drone activity for students.
         </p>
 
         <div class="project-tags">
@@ -66,26 +64,60 @@
           <span>Rotor Acoustics</span>
           <span>CHARM</span>
           <span>PSU-WOPWOP</span>
-          <span>AIAA Publication</span>
-          <span>Tello Workshop</span>
+          <span>Tello</span>
+          <span>STL Generation</span>
+          <span>XFOIL</span>
+          <span>Linux</span>
         </div>
       </div>
 
       <div class="project-hero-image">
-        <div
-          class="image-slider hero-style-slider"
-          data-images="images/ufmal/TelloSetup.jpg, images/ufmal/Tello4.jpg, images/ufmal/PilotSimulation1.jpg, images/ufmal/UAMWorkshopGroupPhoto.jpg"
-          data-alt="UFMAL images">
+        <div class="image-slider hero-style-slider"
+          data-images="images/ufmal/UAMWorkshopGroupPhoto.jpeg,images/ufmal/Blade2.PNG" data-alt="UFMAL images">
           <div class="slider-stage">
-            <img class="slider-side-image slider-side-left" alt="Previous image preview">
-            <img class="slider-main-image" alt="Main slider image">
-            <img class="slider-side-image slider-side-right" alt="Next image preview">
+            <img class="slider-side-image slider-side-left">
+            <img class="slider-main-image">
+            <img class="slider-side-image slider-side-right">
 
-            <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
-            <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
+            <button class="slider-arrow left">‹</button>
+            <button class="slider-arrow right">›</button>
+
+            <button class="expand-media-button" aria-label="Expand image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M4 9V4h5"></path>
+                <path d="M20 9V4h-5"></path>
+                <path d="M4 15v5h5"></path>
+                <path d="M20 15v5h-5"></path>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
+
+    </section>
+
+    <!-- SPLIT OVERVIEW -->
+    <section class="project-overview-grid">
+
+      <article class="project-info-card">
+        <h2>Research Contribution</h2>
+        <ul class="project-bullet-list">
+          <li>Processed blade geometry data for use in rotor simulation workflows</li>
+          <li>Worked on thickness-noise analysis used in the final study </li>
+          <li>Built MATLAB tools and workflows to automate geometry and data conversion steps</li>
+          <li>Supported comparison of simulated trends against experimental NASA data</li>
+        </ul>
+      </article>
+
+      <article class="project-info-card">
+        <h2>Outreach Leadership</h2>
+        <ul class="project-bullet-list">
+          <li>Helped support the NASA ULI UAM workshop in Daytona</li>
+          <li>Helped lead the Tello drone section of the event</li>
+          <li>Experienced Embrey-Riddle campus facility tours</li>
+          <li>Listened to industry professionals about challenges and progress for UAM</li>
+        </ul>
+      </article>
 
     </section>
 
@@ -96,17 +128,17 @@
         <h2>AIAA Conference Paper Contribution</h2>
       </div>
 
-      <article class="project-hero-card" style="margin-bottom: 0;">
+      <article class="project-hero-card" style="margin-bottom: 0; display: flex; flex-direction: column; gap: 24px;">
+
+        <!-- TOP ROW: logo + text -->
         <div class="project-hero-text">
-          <img
-            src="images/ufmal/aiaa-logo.jpg"
-            alt="AIAA logo"
+          <img src="images/ufmal/aiaa-logo.jpg" alt="AIAA logo"
             style="width: 100%; max-width: 360px; height: auto; display: block; margin-bottom: 18px;">
 
-          <p class="project-kicker">Published Author</p>
+
 
           <h2 style="margin: 0 0 14px; font-size: 2rem; font-family: var(--font-serif); color: var(--color-text);">
-            Prediction of Performance and Noise of a Small Quadrotor Using CHARM
+            Prediction of Performance and Noise of a Small Quadrotor using CHARM
           </h2>
 
           <p style="margin: 0 0 18px; line-height: 1.7; color: var(--color-text-mid);">
@@ -116,253 +148,316 @@
           </p>
 
           <div class="project-tags">
-            <span>Published Author</span>
             <span>Quadrotor Noise</span>
             <span>Performance Prediction</span>
             <span>NASA Comparison</span>
           </div>
-
-          <div style="margin-top: 22px;">
-            <a
-              href="https://arc.aiaa.org/doi/10.2514/6.2026-1479"
-              target="_blank"
-              rel="noopener noreferrer"
-              style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none; background: var(--color-dark-glass); color: white; padding: 12px 20px; border-radius: 999px; box-shadow: 0 6px 18px rgba(0,0,0,0.18);">
-              <span>View AIAA Publication</span>
-              <span>↗</span>
-            </a>
-          </div>
         </div>
 
-        <div class="project-info-card" style="height: 100%; box-sizing: border-box;">
+        <!-- FULL WIDTH ABSTRACT ROW -->
+        <div class="project-info-card" style="width: 100%; box-sizing: border-box;">
           <h2>Abstract</h2>
           <p style="line-height: 1.85; color: var(--color-text-muted);">
-            Mobility (UAM) vehicle and drone delivery industries. Rapid trend prediction of performance
-            and noise is useful during the design phase of any vehicle and is necessary for informing
-            advanced vehicle control. The simulation tool CHARM coupled to PSU-WOPWOP offers a mid-fidelity
-            prediction capability applicable to these industries. Its ability to capture the performance and
-            noise trends for the SUI Endurance small quadrotor is presented. The effect of some of the software’s
-            modeling parameters is investigated. Traditional convergence is not obtained for some parameters.
-            Still force and moment predictions are shown to be mostly within 5% and 10% respectively and the
-            main tonal noise predictions are within 1 dB of each other. When compared to performance and noise
-            data from NASA experiments, trends are captured while the moment values are inaccurate. When focusing
-            on the tonal noise, there is an underprediction of several dB. This is most likely because the wake
-            interactions with other rotors are not fully modeled with the method.
+            Mobility (UAM) vehicle and drone delivery industries. Rapid trend prediction of performance and noise is
+            useful during the design phase of any vehicle and is necessary for informing advanced vehicle control. The
+            simulation tool CHARM coupled to PSU-WOPWOP offers a mid-fidelity prediction capability applicable to these
+            industries. Its ability to capture the performance and noise trends for the SUI Endurance small quadrotor is
+            presented. The effect of some of the software’s modeling parameters is investigated. Traditional convergence
+            is not obtained for some parameters. Still force and moment predictions are shown to be mostly within 5% and
+            10% respectively and the main tonal noise predictions are within 1dB of each other. When compared to
+            performance and noise data from NASA experiments, trends are captured while the moment values are
+            inaccurate. When focusing on the tonal noise, there is an underprediction of several dB. This is most likely
+            because the wake interactions with other rotors are not fully modeled with the method.
           </p>
         </div>
+
+        <!-- LINK -->
+        <div style="margin-top: 22px;">
+          <a href="https://arc.aiaa.org/doi/10.2514/6.2026-1479" target="_blank" rel="noopener noreferrer"
+            style="display: inline-flex; align-items: center; gap: 10px; text-decoration: none; background: var(--color-dark-glass); color: white; padding: 12px 20px; border-radius: 999px; box-shadow: 0 6px 18px rgba(0,0,0,0.18);">
+            <span>View AIAA Publication</span>
+            <span>↗</span>
+          </a>
+        </div>
+
       </article>
     </section>
 
-    <!-- SPLIT OVERVIEW -->
-    <section class="project-overview-grid">
 
-      <article class="project-info-card">
-        <h2>My Lab Work That Contributed to the Paper</h2>
-        <ul class="project-bullet-list">
-          <li>Processed blade geometry data for use in rotor simulation workflows</li>
-          <li>Worked on thickness-noise analysis used in the final study results</li>
-          <li>Built MATLAB tools and workflows to automate geometry and data conversion steps</li>
-          <li>Supported comparison of simulated trends against experimental NASA data</li>
-        </ul>
-      </article>
 
-      <article class="project-info-card">
-        <h2>My Workshop Role in Daytona</h2>
-        <ul class="project-bullet-list">
-          <li>Helped support the NASA ULI UAM workshop in Daytona</li>
-          <li>Helped lead the Tello drone section of the event</li>
-          <li>Worked directly with students during setup, activities, and challenge exercises</li>
-          <li>Connected UFMAL research involvement with hands-on outreach and engagement</li>
-        </ul>
-      </article>
 
+    <!-- CREATIVE SPLIT SECTION -->
+    <section class="project-process-section">
+      <div class="section-heading-row">
+        <p class="section-kicker">Two Sides of UFMAL</p>
+        <h2>Research Contribution</h2>
+      </div>
+
+      <div class="process-grid">
+
+        <article class="process-card">
+          <div class="image-slider card-style-slider process-style-slider"
+            data-images="images/ufmal/CHARMPerformance.png, images/ufmal/bladeAnalysis.png"
+            data-alt="Simulation and aerospace environment images">
+            <div class="slider-stage">
+            <img class="slider-side-image slider-side-left">
+            <img class="slider-main-image">
+            <img class="slider-side-image slider-side-right">
+
+            <button class="slider-arrow left">‹</button>
+            <button class="slider-arrow right">›</button>
+
+            <button class="expand-media-button" aria-label="Expand image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M4 9V4h5"></path>
+                <path d="M20 9V4h-5"></path>
+                <path d="M4 15v5h5"></path>
+                <path d="M20 15v5h-5"></path>
+              </svg>
+            </button>
+          </div>
+          </div>
+
+          <h3>CHARM Performance Prediction</h3>
+          <p>
+           Used CHARM with iterative tuning to predict drone force and moment performance, comparing results to NASA experimental data for validation.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="image-slider card-style-slider process-style-slider"
+            data-images="images/ufmal/Bsurface.png, images/ufmal/AirfoilPoints.png"
+            data-alt="Tello workshop setup images">
+            <div class="slider-stage">
+            <img class="slider-side-image slider-side-left">
+            <img class="slider-main-image">
+            <img class="slider-side-image slider-side-right">
+
+            <button class="slider-arrow left">‹</button>
+            <button class="slider-arrow right">›</button>
+
+            <button class="expand-media-button" aria-label="Expand image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M4 9V4h5"></path>
+                <path d="M20 9V4h-5"></path>
+                <path d="M4 15v5h5"></path>
+                <path d="M20 15v5h-5"></path>
+              </svg>
+            </button>
+          </div>
+          </div>
+
+          <h3>STL Generation</h3>
+          <p>
+           Developed MATLAB tools to convert airfoil point data into STL models, enabling faster analysis across different blade geometries.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="image-slider card-style-slider process-style-slider"
+            data-images="images/ufmal/ThicknessNoise.png, images/ufmal/Bsurface2.png"
+            data-alt="Student Tello challenge images">
+            <div class="slider-stage">
+            <img class="slider-side-image slider-side-left">
+            <img class="slider-main-image">
+            <img class="slider-side-image slider-side-right">
+
+            <button class="slider-arrow left">‹</button>
+            <button class="slider-arrow right">›</button>
+
+            <button class="expand-media-button" aria-label="Expand image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M4 9V4h5"></path>
+                <path d="M20 9V4h-5"></path>
+                <path d="M4 15v5h5"></path>
+                <path d="M20 15v5h-5"></path>
+              </svg>
+            </button>
+          </div>
+          </div>
+
+          <h3>Thickness Noise Analysis</h3>
+          <p>
+            Analyzed thickness noise by comparing CAD-based airfoil data with CHARM predictions, building tools to streamline pressure and surface data processing.
+          </p>
+        </article>
+
+      </div>
     </section>
 
     <!-- CREATIVE SPLIT SECTION -->
     <section class="project-process-section">
       <div class="section-heading-row">
         <p class="section-kicker">Two Sides of UFMAL</p>
-        <h2>Research Contribution + Student Workshop Leadership</h2>
+        <h2>Outreach Workshop Leadership</h2>
       </div>
 
       <div class="process-grid">
 
         <article class="process-card">
-          <div
-            class="image-slider card-style-slider process-style-slider"
-            data-images="images/ufmal/PilotSim2.jpg, images/ufmal/PilotSim3.jpg, images/ufmal/pilotSim4.jpg, images/ufmal/PilotSimulation1.jpg"
+          <div class="image-slider card-style-slider process-style-slider"
+            data-images="images/ufmal/WriteBrothersStatue.jpg, images/ufmal/planes.jpeg, images/ufmal/PilotSim3.jpeg, images/ufmal/pilotSim4.jpeg"
             data-alt="Simulation and aerospace environment images">
             <div class="slider-stage">
-              <img class="slider-side-image slider-side-left" alt="Previous image preview">
-              <img class="slider-main-image" alt="Main slider image">
-              <img class="slider-side-image slider-side-right" alt="Next image preview">
+            <img class="slider-side-image slider-side-left">
+            <img class="slider-main-image">
+            <img class="slider-side-image slider-side-right">
 
-              <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
-              <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
-            </div>
+            <button class="slider-arrow left">‹</button>
+            <button class="slider-arrow right">›</button>
+
+            <button class="expand-media-button" aria-label="Expand image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M4 9V4h5"></path>
+                <path d="M20 9V4h-5"></path>
+                <path d="M4 15v5h5"></path>
+                <path d="M20 15v5h-5"></path>
+              </svg>
+            </button>
+          </div>
           </div>
 
-          <h3>Research Environment</h3>
+          <h3>Campus Tour</h3>
           <p>
-            My lab work focused on rotor acoustics, simulation support, and data processing that fed into
-            a published AIAA paper. This side of the experience reflects the analytical and technical work
-            behind the scenes.
+            Explored Embry-Riddle’s campus and got a closer look at its aerospace labs, aircraft, and engineering spaces.
           </p>
         </article>
 
         <article class="process-card">
-          <div
-            class="image-slider card-style-slider process-style-slider"
-            data-images="images/ufmal/TelloSetup.jpg, images/ufmal/Tello1.jpg, images/ufmal/Tello2.jpg"
+          <div class="image-slider card-style-slider process-style-slider"
+            data-images="images/ufmal/Tello1.jpg, images/ufmal/Tello10.jpeg"
             data-alt="Tello workshop setup images">
             <div class="slider-stage">
-              <img class="slider-side-image slider-side-left" alt="Previous image preview">
-              <img class="slider-main-image" alt="Main slider image">
-              <img class="slider-side-image slider-side-right" alt="Next image preview">
+            <img class="slider-side-image slider-side-left">
+            <img class="slider-main-image">
+            <img class="slider-side-image slider-side-right">
 
-              <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
-              <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
-            </div>
+            <button class="slider-arrow left">‹</button>
+            <button class="slider-arrow right">›</button>
+
+            <button class="expand-media-button" aria-label="Expand image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M4 9V4h5"></path>
+                <path d="M20 9V4h-5"></path>
+                <path d="M4 15v5h5"></path>
+                <path d="M20 15v5h-5"></path>
+              </svg>
+            </button>
+          </div>
           </div>
 
           <h3>Tello Workshop Support</h3>
           <p>
-            In Daytona, I helped guide the Tello portion of the workshop. This included supporting students,
-            helping with the activity flow, and making the drone challenge approachable and engaging.
-          </p>
+           Helped guide students through coding Tello drones, teaching them how to fly shapes, track colors, and recognize patterns.
         </article>
 
         <article class="process-card">
-          <div
-            class="image-slider card-style-slider process-style-slider"
-            data-images="images/ufmal/Tello3.jpg, images/ufmal/Tello4.jpg, images/ufmal/Tello5.jpg"
+          <div class="image-slider card-style-slider process-style-slider"
+            data-images="images/ufmal/TelloSetup.jpg,images/ufmal/Tello3.jpg, images/ufmal/Tello4.jpg, images/ufmal/Tello5.jpg"
             data-alt="Student Tello challenge images">
             <div class="slider-stage">
-              <img class="slider-side-image slider-side-left" alt="Previous image preview">
-              <img class="slider-main-image" alt="Main slider image">
-              <img class="slider-side-image slider-side-right" alt="Next image preview">
+            <img class="slider-side-image slider-side-left">
+            <img class="slider-main-image">
+            <img class="slider-side-image slider-side-right">
 
-              <button class="slider-arrow left" type="button" aria-label="Previous image">‹</button>
-              <button class="slider-arrow right" type="button" aria-label="Next image">›</button>
-            </div>
+            <button class="slider-arrow left">‹</button>
+            <button class="slider-arrow right">›</button>
+
+            <button class="expand-media-button" aria-label="Expand image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M4 9V4h5"></path>
+                <path d="M20 9V4h-5"></path>
+                <path d="M4 15v5h5"></path>
+                <path d="M20 15v5h-5"></path>
+              </svg>
+            </button>
+          </div>
           </div>
 
           <h3>Student Challenge</h3>
           <p>
-            The student drone activities showed the outreach side of the lab: turning research-adjacent
-            work into hands-on learning and giving students a direct connection to aerospace systems.
+            Organized hands-on drone challenges where students flew through hoops, navigated obstacles, and completed precision landings.
           </p>
         </article>
 
       </div>
     </section>
 
-    <!-- FEATURE ROW -->
-    <section class="project-feature-grid">
 
-      <article class="feature-card feature-wide">
-        <img src="images/ufmal/UAMWorkshopGroupPhoto.jpg" alt="UAM workshop group photo">
-
-        <div class="feature-copy">
-          <h3>Workshop in Daytona</h3>
-          <p>
-            The workshop brought together technical learning, aerospace facilities, and interactive drone
-            activities. It was a strong example of how my lab experience connected both research impact and
-            student-facing outreach.
-          </p>
-        </div>
-      </article>
-
-      <article class="feature-card">
-        <img src="images/ufmal/planes.jpg" alt="Aircraft view">
-
-        <div class="feature-copy">
-          <h3>Aerospace Context</h3>
-          <p>
-            The setting at Embry-Riddle reinforced the connection between aviation, unmanned systems,
-            simulation, and future mobility research.
-          </p>
-        </div>
-      </article>
-
-      <article class="feature-card">
-        <img src="images/ufmal/WriteBrothersStatue.jpg" alt="Wright Brothers statue">
-
-        <div class="feature-copy">
-          <h3>Campus Visit</h3>
-          <p>
-            The trip also reflected the broader academic and aerospace environment surrounding the workshop.
-          </p>
-        </div>
-      </article>
-
-    </section>
 
     <!-- BACK TO TOP -->
     <div class="back-to-top-wrapper">
       <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-        ↑ Back to Top
+        Back to Top
       </button>
     </div>
 
   </main>
 
   <footer class="bottom-gallery-bar">
-  <div class="gallery-nav-spacer" aria-hidden="true"></div>
+    <div class="gallery-nav-spacer" aria-hidden="true"></div>
 
-  <a href="ufmalGallery.html" class="bottom-gallery-button">
-    Full Gallery
-  </a>
+    <a href="ufmalGallery.html" class="bottom-gallery-button">
+      Photo Gallery
+    </a>
 
-  <div class="gallery-nav-spacer" aria-hidden="true"></div>
-</footer>
+    <div class="gallery-nav-spacer" aria-hidden="true"></div>
+  </footer>
 
 
   <!-- CONTACT -->
   <section class="contact-section">
-  <div class="contact-container">
+    <div class="contact-container">
 
-    <div class="contact-left">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out for projects, collaboration, or opportunities.</p>
+      <div class="contact-left">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for projects, collaboration, or opportunities.</p>
 
-      <div class="contact-info">
-        <p><strong>Email:</strong> 
-          <a href="mailto:elliotady@gmail.com">elliotady@gmail.com</a>
-        </p>
+        <div class="contact-info">
+          <p><strong>Email:</strong>
+            <a href="mailto:elliotady@gmail.com">elliotady@gmail.com</a>
+          </p>
 
-        <p><strong>Phone:</strong> 
-          <a href="tel:18025574337">(802) 557-4337</a>
-        </p>
+          <p><strong>Phone:</strong>
+            <a href="tel:18025574337">(802) 557-4337</a>
+          </p>
 
-        <p><strong>LinkedIn:</strong> 
-          <a href="https://www.linkedin.com/in/elliotdy" target="_blank">
-            linkedin.com/in/elliotdy
-          </a>
-        </p>
+          <p><strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/elliotdy" target="_blank">
+              linkedin.com/in/elliotdy
+            </a>
+          </p>
+        </div>
       </div>
+
+      <form class="contact-form" action="https://formspree.io/f/xkopbwqj" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+        <!-- Optional but useful -->
+        <input type="hidden" name="_subject" value="Portfolio Contact Message">
+
+        <button type="submit">Send Message</button>
+      </form>
+
     </div>
+  </section>
 
-    <form 
-      class="contact-form"
-      action="https://formspree.io/f/xkopbwqj"
-      method="POST"
-    >
-      <input type="text" name="name" placeholder="Your Name" required>
+  <div class="media-expand-modal" id="mediaExpandModal" aria-hidden="true">
+    <div class="media-expand-overlay"></div>
 
-      <input type="email" name="email" placeholder="Your Email" required>
-
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-
-      <!-- Optional but useful -->
-      <input type="hidden" name="_subject" value="Portfolio Contact Message">
-
-      <button type="submit">Send Message</button>
-    </form>
-
+    <div class="media-expand-dialog" role="dialog" aria-modal="true" aria-label="Expanded image view">
+      <button class="media-expand-close" id="mediaExpandClose" type="button"
+        aria-label="Close expanded image">×</button>
+      <img class="media-expand-image" id="mediaExpandImage" alt="Expanded project image">
+    </div>
   </div>
-</section>
 
   <script src="slider.js"></script>
+  <script src="expand-media.js"></script>
 </body>
+
 </html>
