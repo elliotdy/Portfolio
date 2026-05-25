@@ -12,6 +12,7 @@
   <!-- NAV -->
   <nav class="top-nav">
     <div class="nav-container">
+
       <div class="nav-left">
         <span class="nav-name">Elliot Dy</span>
 
@@ -22,6 +23,7 @@
       </div>
 
       <div class="nav-links">
+
         <a href="index.html">Home</a>
 
         <div class="nav-dropdown">
@@ -39,66 +41,117 @@
         <a href="ufmal.html">Research</a>
         <a href="aboutme.html">About Me</a>
         <a href="resume.html">Resume</a>
+
       </div>
     </div>
   </nav>
 
+  <!-- DOWNLOAD BUTTON -->
+  <a 
+    href="images/ElliotDyResume.pdf"
+    download
+    class="resume-download"
+  >
+    Download Resume
+  </a>
 
   <!-- RESUME IMAGE -->
   <main class="resume-image-page">
     <div class="resume-image-shell">
+
       <img
         src="images/ResumePhoto.png"
         alt="Elliot Dy Resume"
         class="resume-image"
       >
+
     </div>
   </main>
 
   <!-- CONTACT -->
   <section class="contact-section">
-  <div class="contact-container">
 
-    <div class="contact-left">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out for projects, collaboration, or opportunities.</p>
+    <div class="contact-container">
 
-      <div class="contact-info">
-        <p><strong>Email:</strong> 
-          <a href="mailto:elliotady@gmail.com">elliotady@gmail.com</a>
+      <div class="contact-left">
+
+        <h2>Contact Me</h2>
+
+        <p>
+          Feel free to reach out for projects, collaboration, or opportunities.
         </p>
 
-        <p><strong>Phone:</strong> 
-          <a href="tel:18025574337">(802) 557-4337</a>
-        </p>
+        <div class="contact-info">
 
-        <p><strong>LinkedIn:</strong> 
-          <a href="https://www.linkedin.com/in/elliotdy" target="_blank">
-            linkedin.com/in/elliotdy
-          </a>
-        </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:elliotady@gmail.com">
+              elliotady@gmail.com
+            </a>
+          </p>
+
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:18025574337">
+              (802) 557-4337
+            </a>
+          </p>
+
+          <p>
+            <strong>LinkedIn:</strong>
+
+            <a 
+              href="https://www.linkedin.com/in/elliotdy"
+              target="_blank"
+            >
+              linkedin.com/in/elliotdy
+            </a>
+          </p>
+
+        </div>
       </div>
+
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/xkopbwqj"
+        method="POST"
+      >
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+        >
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        >
+
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="5"
+          required
+        ></textarea>
+
+        <input
+          type="hidden"
+          name="_subject"
+          value="Portfolio Contact Message"
+        >
+
+        <button type="submit">
+          Send Message
+        </button>
+
+      </form>
+
     </div>
-
-    <form 
-      class="contact-form"
-      action="https://formspree.io/f/xkopbwqj"
-      method="POST"
-    >
-      <input type="text" name="name" placeholder="Your Name" required>
-
-      <input type="email" name="email" placeholder="Your Email" required>
-
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-
-      <!-- Optional but useful -->
-      <input type="hidden" name="_subject" value="Portfolio Contact Message">
-
-      <button type="submit">Send Message</button>
-    </form>
-
-  </div>
-</section>
+  </section>
 
 </body>
 </html>

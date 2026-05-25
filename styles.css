@@ -219,22 +219,41 @@ body {
   top: -35px;
   left: 50%;
   transform: translateX(-50%) translateY(10px);
+
   background: rgba(0, 0, 0, 0.8);
   color: white;
+
   padding: 6px 12px;
   border-radius: 6px;
+
   font-size: 14px;
   letter-spacing: 0.5px;
+
   opacity: 0;
   transition: var(--transition-std);
+
   pointer-events: none;
   white-space: nowrap;
 }
 
-.paper:hover .label {
+/* Default visible Resume label */
+.resume-paper .label {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+
+/* Hide default Resume label when hovering anywhere on papers */
+.papers:hover .resume-paper .label {
+  opacity: 0;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Show ONLY hovered page label */
+.paper:hover .label {
+  opacity: 1 !important;
+  transform: translateX(-50%) translateY(0);
+}
+
 
 
 
@@ -2501,4 +2520,55 @@ body {
 
 body.media-expand-open {
   overflow: hidden;
+}
+
+
+
+.resume-download {
+  position: fixed;
+  top: var(--nav-height);
+  right: 30px;
+
+  padding: 12px 28px 14px;
+
+  background: var(--color-dark-glass);
+  backdrop-filter: var(--blur-glass);
+  -webkit-backdrop-filter: var(--blur-glass);
+
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+
+  border-radius: 0 0 20px 20px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;
+
+  box-shadow: var(--shadow-nav);
+
+  z-index: 998;
+}
+
+.resume-download::after {
+  content: "";
+
+  position: absolute;
+
+  left: 28px;
+  bottom: 8px;
+
+  width: 0;
+  height: 2px;
+
+  background: white;
+
+  transition: width var(--transition-std);
+}
+
+.resume-download:hover::after {
+  width: calc(100% - 56px);
 }
