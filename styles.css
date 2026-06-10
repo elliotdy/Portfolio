@@ -290,6 +290,13 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  gap: 12px;
+}
+
+.nav-logo {
+  height: 42px;
+  width: auto;
+  display: block;
 }
 
 .nav-name {

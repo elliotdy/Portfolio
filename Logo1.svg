@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 145.22 113.98">
+  <!-- Generator: Adobe Illustrator 30.5.1, SVG Export Plug-In . SVG Version: 2.1.4 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #f58424;
+      }
+
+      .st1 {
+        fill: #0089cf;
+      }
+    </style>
+  </defs>
+  <text/>
+  <g>
+    <rect class="st0" x="77.05" y="5.56" width="32.29" height="77.65"/>
+    <ellipse class="st0" cx="111.14" cy="44.38" rx="34.08" ry="38.83"/>
+    <g>
+      <rect class="st1" x="35.88" y="36.33" width="32.29" height="77.65" transform="translate(104.04 150.32) rotate(-180)"/>
+      <ellipse class="st1" cx="34.08" cy="75.16" rx="34.08" ry="38.83"/>
+    </g>
+    <g>
+      <rect class="st1" x="86.26" y="52.04" width="6.57" height="15.8"/>
+      <ellipse class="st1" cx="93.2" cy="59.93" rx="6.93" ry="7.9"/>
+    </g>
+    <g>
+      <rect class="st0" x="52.39" y="52.04" width="6.57" height="15.8" transform="translate(111.34 119.87) rotate(-180)"/>
+      <ellipse class="st0" cx="52.02" cy="59.93" rx="6.93" ry="7.9"/>
+    </g>
+  </g>
+</svg>

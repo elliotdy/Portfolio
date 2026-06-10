@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Elliot Dy Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="Logo1.svg">
   <link href="styles.css" rel="stylesheet" />
 </head>
 
@@ -12,6 +13,7 @@
   <nav class="top-nav">
     <div class="nav-container">
       <div class="nav-left">
+        <img src="Logo1.svg" alt="Logo" class="nav-logo">
         <span class="nav-name">Elliot Dy</span>
       </div>
 
@@ -22,7 +24,7 @@
           <a href="projects.html" class="nav-dropdown-toggle">Projects</a>
 
           <div class="dropdown-menu">
-            <a href="projects.html">Project Page</a>
+            <a href="projects.html">All Projects</a>
             <a href="sCO2Turbine.html">sCO2 Turbine</a>
             <a href="WalkingTable.html">Walking Table</a>
             <a href="drinkMixer.html">Drink Mixer</a>
@@ -68,47 +70,43 @@
 
 
   <section class="contact-section">
-  <div class="contact-container">
+    <div class="contact-container">
 
-    <div class="contact-left">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out for projects, collaboration, or opportunities.</p>
+      <div class="contact-left">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for projects, collaboration, or opportunities.</p>
 
-      <div class="contact-info">
-        <p><strong>Email:</strong> 
-          <a href="mailto:elliotady@gmail.com">elliotady@gmail.com</a>
-        </p>
+        <div class="contact-info">
+          <p><strong>Email:</strong>
+            <a href="mailto:elliotady@gmail.com">elliotady@gmail.com</a>
+          </p>
 
-        <p><strong>Phone:</strong> 
-          <a href="tel:18025574337">(802) 557-4337</a>
-        </p>
+          <p><strong>Phone:</strong>
+            <a href="tel:18025574337">(802) 557-4337</a>
+          </p>
 
-        <p><strong>LinkedIn:</strong> 
-          <a href="https://www.linkedin.com/in/elliotdy" target="_blank">
-            linkedin.com/in/elliotdy
-          </a>
-        </p>
+          <p><strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/elliotdy" target="_blank">
+              linkedin.com/in/elliotdy
+            </a>
+          </p>
+        </div>
       </div>
+
+      <form class="contact-form" action="https://formspree.io/f/xkopbwqj" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+        <input type="hidden" name="_subject" value="Portfolio Contact Message">
+
+        <button type="submit">Send Message</button>
+      </form>
+
     </div>
-
-    <form 
-      class="contact-form"
-      action="https://formspree.io/f/xkopbwqj"
-      method="POST"
-    >
-      <input type="text" name="name" placeholder="Your Name" required>
-
-      <input type="email" name="email" placeholder="Your Email" required>
-
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-
-      <input type="hidden" name="_subject" value="Portfolio Contact Message">
-
-      <button type="submit">Send Message</button>
-    </form>
-
-  </div>
-</section>
+  </section>
 </body>
 
 </html>
