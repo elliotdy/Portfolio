@@ -459,6 +459,7 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   position: relative;
+  text-align: center;
 }
 
 .ProjectPage {
