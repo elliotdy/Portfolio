@@ -29,8 +29,96 @@
   --transition-std: 0.25s ease;
   --blur-glass: blur(8px);
 
-  --font-serif: "Times New Roman", Times, serif;
-  --font-sans:  sans-serif;
+--font-serif: "Rajdhani", sans-serif;
+--font-sans:  "Roboto", sans-serif;
+
+  /* ── FONT ROLE TOKENS ──────────────────────────────────────
+     Change these to restyle entire categories at once.
+
+     FAMILIES
+     --font-display   : large hero titles (h1 on home, project pages, about)
+     --font-heading   : section headings, card titles, process card h3
+     --font-body      : all body copy, summaries, descriptions
+     --font-ui        : nav links, buttons, labels, tags, kickers
+     --font-mono      : (reserved — use for code or data if added later)
+
+     SIZES — page-level headings
+     --size-hero      : home page name (4.5rem)
+     --size-h1        : project/about page h1 (3.5rem)
+     --size-h2        : section headings (2.2rem)
+     --size-h3        : card and process headings (1.8rem)
+     --size-gallery-h1: gallery page header h1 (4rem)
+
+     SIZES — UI & body
+     --size-body      : standard body copy (1rem)
+     --size-body-sm   : small body / summaries (0.85rem)
+     --size-kicker    : uppercase label above headings (0.92rem)
+     --size-tag       : skill tags / badge text (0.78–0.86rem)
+     --size-nav       : nav links (1rem)
+     --size-nav-name  : Elliot Dy name in nav (1.2rem)
+  ─────────────────────────────────────────────────────────── */
+
+  --font-display: var(--font-serif);
+  --font-heading: var(--font-serif);
+  --font-body:    var(--font-sans);
+  --font-ui:      var(--font-sans);
+
+  --size-hero:       4.5rem;
+  --size-h1:         3.5rem;
+  --size-h2:         2.2rem;
+  --size-h3:         1.8rem;
+  --size-gallery-h1: 4rem;
+
+  --size-body:    1rem;
+  --size-body-sm: 0.85rem;
+  --size-kicker:  0.92rem;
+  --size-tag:     0.82rem;
+  --size-nav:     1rem;
+  --size-nav-name: 1.2rem;
+
+
+/* ============================================================
+   PER-PROJECT COLOR THEMES
+   Add the matching class to <body> on each project page.
+   Only the three color tokens need overriding — everything
+   (buttons, tags, kickers) inherits the change automatically.
+
+   sCO2 Turbine  — no class needed, uses default red above
+   Walking Table — theme-green
+   Drink Mixer   — theme-yellow
+   Balancing Car — theme-blue
+   Trash Can     — theme-pink
+   Plane         — theme-purple
+   ============================================================ */
+
+.theme-green {
+  --color-red:      rgb(74, 148, 97);
+  --color-red-dark: rgb(30, 90, 52);
+  --color-red-tint: rgba(74, 148, 97, 0.12);
+}
+
+.theme-yellow {
+  --color-red:      rgb(200, 160, 40);
+  --color-red-dark: rgb(110, 80, 10);
+  --color-red-tint: rgba(200, 160, 40, 0.12);
+}
+
+.theme-blue {
+  --color-red:      rgb(60, 120, 195);
+  --color-red-dark: rgb(25, 65, 130);
+  --color-red-tint: rgba(60, 120, 195, 0.12);
+}
+
+.theme-pink {
+  --color-red:      rgb(200, 90, 140);
+  --color-red-dark: rgb(120, 40, 80);
+  --color-red-tint: rgba(200, 90, 140, 0.12);
+}
+
+.theme-purple {
+  --color-red:      rgb(120, 80, 190);
+  --color-red-dark: rgb(65, 30, 120);
+  --color-red-tint: rgba(120, 80, 190, 0.12);
 }
 
 
@@ -44,7 +132,7 @@ html, body {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   min-height: 100vh;
   padding-top: var(--nav-height);
   display: flex;
@@ -52,13 +140,11 @@ body {
   box-sizing: border-box;
 }
 
-/* Pages that need padding-top but aren't flex columns */
+/* Page-level min-height overrides (padding-top already set on body) */
 .home,
 .resume-page,
 .about-page {
   min-height: 100vh;
-  padding-top: var(--nav-height);
-  box-sizing: border-box;
 }
 
 
@@ -94,7 +180,7 @@ body {
 
 .hero-name-block h1 {
   margin: 0;
-  font-size: 4.5rem;
+  font-size: var(--size-hero);
   font-weight: 800;
   letter-spacing: 1px;
   color: white;
@@ -273,6 +359,7 @@ body {
   color: white;
   z-index: 999;
   box-shadow: var(--shadow-nav);
+  text-align: left;
 }
 
 .nav-container {
@@ -282,7 +369,7 @@ body {
   padding: 0 30px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
 }
 
 .nav-left {
@@ -301,7 +388,7 @@ body {
 
 .nav-name {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: var(--size-nav-name);
   letter-spacing: 0.5px;
   color: white;
 }
@@ -352,8 +439,9 @@ body {
 .nav-dropdown-toggle {
   text-decoration: none;
   color: white;
-  font-size: 1rem;
+  font-size: var(--size-nav);
   font-weight: 500;
+  font-family: var(--font-ui);
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -380,8 +468,9 @@ body {
 .nav-dropdown {
   position: relative;
   height: 100%;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  width: fit-content;
 }
 
 /* Invisible bridge so hover never gaps between nav and dropdown */
@@ -399,7 +488,7 @@ body {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  min-width: 290px;
+  min-width: 180px;
   background: var(--color-dark-glass);
   backdrop-filter: var(--blur-glass);
   -webkit-backdrop-filter: var(--blur-glass);
@@ -428,13 +517,15 @@ body {
   font-size: 0.95rem;
   font-weight: 500;
   position: relative;
+  text-align: center;
   transition: background var(--transition-std), padding-left var(--transition-std);
 }
 
 .dropdown-menu a::after {
   content: "";
   position: absolute;
-  left: 26px;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 10px;
   width: 0;
   height: 2px;
@@ -444,13 +535,11 @@ body {
 
 .dropdown-menu a:hover {
   background: rgba(255, 255, 255, 0.08);
-  padding-left: 32px;
 }
 
 .dropdown-menu a:hover::after {
   width: calc(100% - 52px);
 }
-
 
 /* ============================================================
    PROJECTS PAGE
@@ -466,7 +555,6 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   position: relative;
-  text-align: center;
 }
 
 .ProjectPage {
@@ -497,8 +585,8 @@ body {
 
 .projects-header h1 {
   margin: 0 0 10px;
-  font-size: 3rem;
-  font-family: var(--font-serif);
+  font-size: var(--size-h1);
+  font-family: var(--font-display);
   line-height: 1;
 }
 
@@ -575,7 +663,7 @@ body {
 .project-card h3 {
   margin: 0 0 10px;
   font-size: 1.05rem;
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
   line-height: 1.12;
   min-height: 1.35em;
 }
@@ -584,7 +672,8 @@ body {
   margin: 0 0 14px;
   color: var(--color-text-light);
   line-height: 1.45;
-  font-size: 0.85rem;
+  font-size: var(--size-body-sm);
+  font-family: var(--font-body);
   min-height: 3em;
 }
 
@@ -602,8 +691,9 @@ body {
   color: var(--color-red-dark);
   padding: 7px 10px;
   border-radius: var(--radius-pill);
-  font-size: 0.78rem;
+  font-size: var(--size-tag);
   font-weight: 600;
+  font-family: var(--font-ui);
   line-height: 1.2;
   white-space: nowrap;
 }
@@ -740,8 +830,9 @@ body {
 
 .about-kicker {
   margin: 0 0 10px;
-  font-size: 0.92rem;
+  font-size: var(--size-kicker);
   font-weight: 700;
+  font-family: var(--font-ui);
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: var(--color-red-dark);
@@ -749,9 +840,9 @@ body {
 
 .about-hero-text-card h1 {
   margin: 0 0 10px;
-  font-size: 3.5rem;
+  font-size: var(--size-h1);
   line-height: 0.95;
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   color: var(--color-text);
 }
 
@@ -802,7 +893,7 @@ body {
 
 .about-quick-grid {
   display: grid;
-  grid-template-columns: 1fr; /* ONE column */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
   margin-bottom: 28px;
 }
@@ -813,8 +904,8 @@ body {
 
 .about-quick-card h2 {
   margin: 0 0 12px;
-  font-size: 1.8rem;
-  font-family: var(--font-serif);
+  font-size: var(--size-h3);
+  font-family: var(--font-heading);
   color: var(--color-text);
 }
 
@@ -836,8 +927,8 @@ body {
 
 .about-section-heading h2 {
   margin: 0;
-  font-size: 2.2rem;
-  font-family: var(--font-serif);
+  font-size: var(--size-h2);
+  font-family: var(--font-heading);
   color: var(--color-text);
   line-height: 1.05;
 }
@@ -976,6 +1067,7 @@ body {
   color: white;
   overflow-x: hidden;
   border-top: none;
+  text-align: left;
 }
 
 .contact-container {
@@ -1121,8 +1213,9 @@ body {
 .project-kicker,
 .section-kicker {
   margin: 0 0 10px;
-  font-size: 0.92rem;
+  font-size: var(--size-kicker);
   font-weight: 700;
+  font-family: var(--font-ui);
   letter-spacing: 1.2px;
   text-transform: uppercase;
   color: var(--color-red-dark);
@@ -1130,9 +1223,9 @@ body {
 
 .project-hero-text h1 {
   margin: 0 0 14px;
-  font-size: 3.5rem;
+  font-size: var(--size-h1);
   line-height: 0.95;
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   color: var(--color-text);
 }
 
@@ -1156,8 +1249,9 @@ body {
   color: var(--color-red-dark);
   padding: 8px 12px;
   border-radius: var(--radius-pill);
-  font-size: 0.86rem;
+  font-size: var(--size-tag);
   font-weight: 600;
+  font-family: var(--font-ui);
 }
 
 /* Layout grids */
@@ -1176,8 +1270,8 @@ body {
 .project-info-card h2,
 .project-process-section h2 {
   margin: 0 0 12px;
-  font-size: 2rem;
-  font-family: var(--font-serif);
+  font-size: var(--size-h2);
+  font-family: var(--font-heading);
   color: var(--color-text);
 }
 
@@ -1217,8 +1311,8 @@ body {
 .feature-copy h3,
 .process-card h3 {
   margin: 0 0 10px;
-  font-size: 1.8rem;
-  font-family: var(--font-serif);
+  font-size: var(--size-h3);
+  font-family: var(--font-heading);
   color: var(--color-text);
 }
 
@@ -1452,234 +1546,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ============================================================
-   GALLERY PAGE (sCO2Gallery)
-   ============================================================ */
-
-.gallery-page-shell {
-  width: min(1600px, 95vw);
-  margin: 0 auto;
-  padding: 28px 0 60px;
-  box-sizing: border-box;
-}
-
-.gallery-page-header {
-  background: #f3f3f1;
-  padding: 36px 38px;
-  margin-bottom: 32px;
-}
-
-.gallery-page-header h1 {
-  margin: 0 0 12px;
-  font-size: 4rem;
-  line-height: 0.95;
-  font-family: var(--font-serif);
-  color: var(--color-text);
-}
-
-.gallery-page-header p {
-  margin: 0;
-  color: #4b4b4b;
-  line-height: 1.6;
-  font-size: 1rem;
-}
-
-/* Masonry */
-.gallery-page-masonry {
-  column-count: 4;
-  column-gap: 26px;
-}
-
-.gallery-masonry-item {
-  break-inside: avoid;
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  margin: 0 0 26px;
-  display: inline-block;
-  width: 100%;
-  background: white;
-  position: relative;
-  cursor: pointer;
-}
-
-.gallery-masonry-item img,
-.gallery-masonry-item video {
-  width: 100%;
-  height: auto;
-  display: block;
-  background: #f6f6f6;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.gallery-masonry-item:hover img,
-.gallery-masonry-item:hover video {
-  transform: scale(1.01);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
-}
-
-.gallery-masonry-item p { display: none; }
-
-/* Video indicator */
-.gallery-video-item::before {
-  content: "▶ VIDEO";
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  z-index: 5;
-  background: rgba(0, 0, 0, 0.72);
-  color: white;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  padding: 7px 10px;
-  border-radius: var(--radius-pill);
-  pointer-events: none;
-}
-
-.gallery-video-item::after {
-  content: "▶";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.55);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.9rem;
-  pointer-events: none;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
-}
-
-/* Lightbox */
-.lightbox-open { overflow: hidden; }
-
-.lightbox {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.96);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 3000;
-}
-
-.lightbox.show { display: flex; }
-
-.lightbox-content {
-  max-width: 90vw;
-  max-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.lightbox-img,
-.lightbox-video {
-  max-width: 90vw;
-  max-height: 80vh;
-  width: auto;
-  height: auto;
-  display: block;
-  object-fit: contain;
-}
-
-.lightbox-video { background: black; }
-
-.lightbox-caption {
-  margin-top: 14px;
-  color: #ddd;
-  font-size: 1rem;
-  text-align: center;
-  max-width: 80%;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 18px;
-  right: 28px;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 3rem;
-  line-height: 1;
-  cursor: pointer;
-  z-index: 3002;
-}
-
-.lightbox-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  color: white;
-  font-size: 4rem;
-  line-height: 1;
-  cursor: pointer;
-  padding: 18px 22px;
-  z-index: 3002;
-}
-
-.lightbox-prev { left: 20px; }
-.lightbox-next { right: 20px; }
-
-.lightbox-arrow:hover,
-.lightbox-close:hover { opacity: 0.75; }
-
-@media (max-width: 1200px) { .gallery-page-masonry { column-count: 3; } }
-
-@media (max-width: 850px) {
-  .gallery-page-masonry { column-count: 2; }
-  .gallery-page-header h1 { font-size: 3rem; }
-}
-
-@media (max-width: 560px) {
-  .gallery-page-masonry { column-count: 1; }
-
-  .gallery-page-header {
-    padding: 28px 22px;
-  }
-
-  .gallery-page-header h1 { font-size: 2.4rem; }
-
-  .lightbox-arrow {
-    font-size: 3rem;
-    padding: 14px;
-  }
-
-  .lightbox-close {
-    font-size: 2.5rem;
-    right: 18px;
-  }
-
-  .gallery-video-item::after {
-    width: 58px;
-    height: 58px;
-    font-size: 1.5rem;
-  }
-}
-
 /* ============================================================
    SLIDER
    ============================================================ */
@@ -1891,9 +1757,9 @@ body {
 
 .universal-gallery-header h1 {
   margin: 0 0 12px;
-  font-size: 4rem;
+  font-size: var(--size-gallery-h1);
   line-height: 0.95;
-  font-family: var(--font-serif);
+  font-family: var(--font-display);
   color: var(--color-text);
 }
 
@@ -2155,28 +2021,6 @@ body {
   height: 18px;
 }
 
-/* MODAL — SHOW PAGE BEHIND */
-
-
-
-
-
-
-
-
-
-
-
-
-/* Prevent scrolling when open */
-
-
-/* CLOSE (X) BUTTON — FIXED */
-
-
-
-
-
 
 /* ============================================================
    PROJECT REFLECTION (WIDE)
@@ -2198,8 +2042,8 @@ body {
 
 .reflection-wide-card h2 {
   margin: 0 0 14px;
-  font-size: 2.2rem;
-  font-family: var(--font-serif);
+  font-size: var(--size-h2);
+  font-family: var(--font-heading);
   color: var(--color-text);
 }
 
@@ -2213,8 +2057,6 @@ body {
 .reflection-wide-card p:last-child {
   margin-bottom: 0;
 }
-
-
 
 
 /* ============================================================
@@ -2248,7 +2090,7 @@ body {
   margin: 0 0 10px;
   font-size: 2.8rem;
   line-height: 0.95;
-  font-family: var(--font-serif);
+  font-family: var(--font-heading);
   color: var(--color-text);
 }
 
@@ -2376,31 +2218,10 @@ body {
 }
 
 
-
-
-
-
 .process-grid-two {
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* MODAL BACKDROP */
-
-
-
-
-/* DIALOG */
-
-
-/* 🔥 KEY FIX — PREVENT ZOOM / CROPPING */
-
-
-/* CLOSE BUTTON */
-
-
-
-
-/* LOCK SCROLL */
 
 /* ============================================================
    SLIDER — VIDEO SUPPORT
@@ -2442,9 +2263,6 @@ body {
   background: transparent;
 }
 
-
-
-/* Modal — video element inside the expand dialog */
 
 /* ============================================================
    EXPAND MODAL — SINGLE CLEAN DEFINITION
@@ -2579,4 +2397,5 @@ body.media-expand-open {
 
 .resume-download:hover::after {
   width: calc(100% - 56px);
+}
 }

@@ -5,45 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Full Gallery | Twin Jet Airliner</title>
   <link rel="icon" type="image/svg+xml" href="Logo1.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="projectBody">
 
   <!-- NAV -->
-  <nav class="top-nav">
-    <div class="nav-container">
-      <div class="nav-left">
-        <img src="Logo1.svg" alt="Logo" class="nav-logo">
-        <span class="nav-name">Elliot Dy</span>
-
-        <a href="plane.html" class="nav-back">
-          <span class="arrow">←</span>
-          <span>Twin Jet Airliner</span>
-        </a>
-      </div>
-
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-
-        <div class="nav-dropdown">
-          <a href="projects.html" class="nav-dropdown-toggle">Projects</a>
-
-          <div class="dropdown-menu">
-            <a href="projects.html">All Projects</a>
-            <a href="sCO2Turbine.html">sCO2 Turbine</a>
-            <a href="WalkingTable.html">Walking Table</a>
-            <a href="drinkMixer.html">Drink Mixer</a>
-            <a href="balancingCar.html">Balancing Car</a>
-          </div>
-        </div>
-
-        <a href="ufmal.html">Research</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="resume.html">Resume</a>
-      </div>
-    </div>
-  </nav>
+  <nav class="top-nav" data-back-href="plane.html" data-back-label="Twin Jet Airliner"></nav>
 
   <main class="universal-gallery-shell">
     <section class="universal-gallery-header">
@@ -143,6 +112,7 @@
     <button class="universal-lightbox-arrow universal-lightbox-next" id="universalNextBtn" aria-label="Next item">&#10095;</button>
   </div>
 
+  <script src="components.js"></script>
   <script src="gallery.js"></script>
 </body>
 </html>

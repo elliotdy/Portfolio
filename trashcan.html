@@ -3,47 +3,17 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mechanism Trash Can</title>
   <link rel="icon" type="image/svg+xml" href="Logo1.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="projectBody">
+<body class="projectBody theme-pink">
 
   <!-- NAV -->
-  <nav class="top-nav">
-    <div class="nav-container">
-      <div class="nav-left">
-        <img src="Logo1.svg" alt="Logo" class="nav-logo">
-        <span class="nav-name">Elliot Dy</span>
-
-        <a href="projects.html" class="nav-back">
-          <span class="arrow">←</span>
-          <span>Projects</span>
-        </a>
-      </div>
-
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-
-        <div class="nav-dropdown">
-          <a href="projects.html" class="nav-dropdown-toggle">Projects</a>
-
-          <div class="dropdown-menu">
-            <a href="projects.html">All Projects</a>
-            <a href="sCO2Turbine.html">sCO2 Turbine</a>
-            <a href="WalkingTable.html">Walking Table</a>
-            <a href="drinkMixer.html">Drink Mixer</a>
-            <a href="balancingCar.html">Balancing Car</a>
-          </div>
-        </div>
-
-        <a href="ufmal.html">Research</a>
-        <a href="aboutme.html">About Me</a>
-        <a href="resume.html">Resume</a>
-      </div>
-    </div>
-  </nav>
+  <nav class="top-nav" data-back-href="projects.html" data-back-label="Projects"></nav>
 
 
   <!-- MAIN -->
@@ -285,46 +255,7 @@ In the future, I plan to further explore mechanism design to create more dynamic
 
   </footer>
 
-  <!-- CONTACT -->
-  <section class="contact-section">
-    <div class="contact-container">
-
-      <div class="contact-left">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out for projects, collaboration, or opportunities.</p>
-
-        <div class="contact-info">
-          <p><strong>Email:</strong>
-            <a href="mailto:elliotady@gmail.com">elliotady@gmail.com</a>
-          </p>
-
-          <p><strong>Phone:</strong>
-            <a href="tel:18025574337">(802) 557-4337</a>
-          </p>
-
-          <p><strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/elliotdy" target="_blank">
-              linkedin.com/in/elliotdy
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <form class="contact-form" action="https://formspree.io/f/xkopbwqj" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-
-        <input type="email" name="email" placeholder="Your Email" required>
-
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-
-        <!-- Optional but useful -->
-        <input type="hidden" name="_subject" value="Portfolio Contact Message">
-
-        <button type="submit">Send Message</button>
-      </form>
-
-    </div>
-  </section>
+  <div id="contact-placeholder"></div>
 
   <div class="media-expand-modal" id="mediaExpandModal" aria-hidden="true">
     <div class="media-expand-overlay"></div>
@@ -336,6 +267,7 @@ In the future, I plan to further explore mechanism design to create more dynamic
     </div>
   </div>
 
+  <script src="components.js"></script>
   <script src="slider.js"></script>
   <script src="expand-media.js"></script>
 </body>
