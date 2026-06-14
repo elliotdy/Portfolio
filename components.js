@@ -33,7 +33,13 @@
           ${backPill}
         </div>
 
-        <div class="nav-links">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
           <a href="index.html">Home</a>
 
           <div class="nav-dropdown">
@@ -52,6 +58,40 @@
           <a href="resume.html">Resume</a>
         </div>
       </div>`;
+
+    // ── Mobile hamburger toggle ──────────────────────────────────────────────
+    const navToggle = document.getElementById("navToggle");
+    const navLinks  = document.getElementById("navLinks");
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("show");
+        navToggle.classList.toggle("open", isOpen);
+        navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      });
+
+      // Close menu when a link is clicked (mobile)
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("show");
+          navToggle.classList.remove("open");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      // On mobile, tapping "Projects" toggles the dropdown instead of relying on hover
+      const dropdownToggle = navLinks.querySelector(".nav-dropdown-toggle");
+      const dropdown       = navLinks.querySelector(".nav-dropdown");
+
+      if (dropdownToggle && dropdown) {
+        dropdownToggle.addEventListener("click", (e) => {
+          if (window.innerWidth <= 860) {
+            e.preventDefault();
+            dropdown.classList.toggle("open");
+          }
+        });
+      }
+    }
   }
 
   // ── CONTACT ────────────────────────────────────────────────────────────────
