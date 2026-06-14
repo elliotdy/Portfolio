@@ -121,6 +121,92 @@
   --color-red-tint: rgba(120, 80, 190, 0.12);
 }
 
+/* ── NEUTRAL / GENERAL PAGE THEMES ── */
+
+.theme-navy {
+  --color-red:      rgb(40, 70, 130);
+  --color-red-dark: rgb(15, 35, 80);
+  --color-red-tint: rgba(40, 70, 130, 0.12);
+}
+
+.theme-slate {
+  --color-red:      rgb(90, 110, 140);
+  --color-red-dark: rgb(45, 60, 85);
+  --color-red-tint: rgba(90, 110, 140, 0.12);
+}
+
+.theme-graphite {
+  --color-red:      rgb(80, 80, 85);
+  --color-red-dark: rgb(40, 40, 45);
+  --color-red-tint: rgba(80, 80, 85, 0.10);
+}
+
+.theme-charcoal {
+  --color-red:      rgb(90, 85, 80);
+  --color-red-dark: rgb(50, 45, 40);
+  --color-red-tint: rgba(90, 85, 80, 0.12);
+}
+
+.theme-teal {
+  --color-red:      rgb(60, 120, 110);
+  --color-red-dark: rgb(25, 75, 65);
+  --color-red-tint: rgba(60, 120, 110, 0.12);
+}
+
+.theme-amber {
+  --color-red:      rgb(160, 100, 40);
+  --color-red-dark: rgb(90, 55, 15);
+  --color-red-tint: rgba(160, 100, 40, 0.12);
+}
+
+.theme-violet {
+  --color-red:      rgb(100, 60, 140);
+  --color-red-dark: rgb(55, 25, 85);
+  --color-red-tint: rgba(100, 60, 140, 0.12);
+}
+
+.theme-terracotta {
+  --color-red:      rgb(180, 80, 50);
+  --color-red-dark: rgb(110, 40, 20);
+  --color-red-tint: rgba(180, 80, 50, 0.12);
+}
+
+.theme-emerald {
+  --color-red:      rgb(40, 130, 100);
+  --color-red-dark: rgb(15, 75, 55);
+  --color-red-tint: rgba(40, 130, 100, 0.12);
+}
+
+.theme-cyan {
+  --color-red:      rgb(50, 140, 160);
+  --color-red-dark: rgb(20, 80, 100);
+  --color-red-tint: rgba(50, 140, 160, 0.12);
+}
+
+.theme-burgundy {
+  --color-red:      rgb(170, 60, 100);
+  --color-red-dark: rgb(100, 25, 55);
+  --color-red-tint: rgba(170, 60, 100, 0.12);
+}
+
+.theme-sage {
+  --color-red:      rgb(60, 100, 80);
+  --color-red-dark: rgb(25, 55, 40);
+  --color-red-tint: rgba(60, 100, 80, 0.12);
+}
+
+.theme-gold {
+  --color-red:      rgb(140, 110, 50);
+  --color-red-dark: rgb(80, 60, 15);
+  --color-red-tint: rgba(140, 110, 50, 0.12);
+}
+
+.theme-steel {
+  --color-red:      rgb(70, 90, 120);
+  --color-red-dark: rgb(30, 45, 70);
+  --color-red-tint: rgba(70, 90, 120, 0.12);
+}
+
 
 /* ============================================================
    RESET & BASE
@@ -253,7 +339,7 @@ body {
 }
 
 .about-paper {
-  width: 180px;
+  width: 200px;
   top: -45px;
   right: -20px;
   transform: rotate(8deg);
@@ -265,6 +351,21 @@ body {
   box-shadow: 0 6px 20px rgba(0,0,0,0.30), 0 1px 3px rgba(0,0,0,0.15);
   border-radius: 3px;
   box-sizing: border-box;
+  transition: transform 0.3s cubic-bezier(0.25, 1.5, 0.5, 1), box-shadow 0.3s ease;
+}
+
+/* Handwritten caption */
+.about-paper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 180px;
+  height: 36px;
+  background-image: url("images/PhotoCaptionAboutMe1.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 .about-paper img {
@@ -273,6 +374,19 @@ body {
   border-radius: 1px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  filter: sepia(8%) contrast(1.05) saturate(0.95);
+  transition: filter 0.3s ease;
+}
+
+/* Hover lift */
+.about-paper:hover {
+  transform: rotate(4deg) scale(1.08) translateY(-8px) !important;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35), 0 4px 8px rgba(0,0,0,0.15) !important;
+  z-index: 110 !important;
+}
+
+.about-paper:hover img {
+  filter: sepia(0%) contrast(1.08) saturate(1.05);
 }
 
 /* Fan-out hover */
@@ -294,10 +408,7 @@ body {
   z-index: 45;
 }
 
-.about-paper,
-.about-paper:hover {
-  z-index: 100 !important;
-}
+.about-paper { z-index: 100; }
 
 /* Paper labels */
 .label {
